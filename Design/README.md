@@ -2,6 +2,4 @@
 
 ## PERSONAS  
 
-| ![](pics/maria.png) | ![](pics/hugo.png) | ![](pics/ettore.png) |
-|:-:|:-:|:-:|
-
+![](pics/personas.png)
