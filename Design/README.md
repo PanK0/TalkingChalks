@@ -6,5 +6,7 @@ Many years have passed since the founding of the first museum and things must ch
 
 ## STORYBOARD 
 Here a short visual explaination on how the final user will interact with our service.
+Each visitor will have a smartband equipped with a sensor related to his visitor category (see personas).
+Approaching the band to the sensor reader that each statue (the most important) will have, an audio description of it will be issued from a speaker, adapted to the type of visitor.
 ![](pics/storyboard.png)
 Note: NFC sensor has only an illustrative purpose and may change during development.
