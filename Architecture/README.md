@@ -17,8 +17,12 @@ When in the Cloud, data can be stored into a database and they will be ready to 
 [LoRaWAN](https://lora-alliance.org/about-lorawan): Long Range Wide Area Network is a communication protocol with high efficiency peculiarities. LoRaWAN is based on low power consumption and a wide communication range belonging to a technologies category named LPWAN - Low Power Wide Area Network, useful in terms of sensors to use the least energy as possible.
 With [iot-lab.info](https://www.iot-lab.info/) in our project we are going to use [B-L072Z-LRWAN1 LoRa Kit](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) programmable using [RIOT-OS](https://riot-os.org/).
 
+Each board has a beacon sensor able to identify a bracelet's profile ant it is also equipped with an Hi-Fi System.
+
 ## Bracelet 
-TODO
+The Bracelet is the key point of the entire system.
+
+It stores the premade user profiles and it's also made of some buttons - for let people enjoy an interactive tour - and a beacon sensor to be identified by the board: the profile ID is so sent to the LoRaWAN board and an appropirate guide track will be reproduced.
 
 ## The Things Network
 [The Things Network](https://www.thethingsnetwork.org/) provides a set of open tools and a global, open network to build an IoT application at low cost.
@@ -32,7 +36,9 @@ Once running, the Gateway launches a client that subscribes to the TTN's broker 
 Data are received from the boards as a json string, then the emitting board is identified by its ID and the payloads are so forwarded using MQTT protocol.
 
 ## Hi-Fi System
-TODO
+Simple speakers connected to the LoRaWAN board, the main role of these instruments is to reproduce the requested audio track that explains the statue.
+
+They can be connected to the electric system or powered by batteries.
 
 ## Cloud
 TODO
