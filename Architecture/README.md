@@ -25,7 +25,11 @@ TODO
 In our project it is used to register our devices to the network and to let them communicate with the gateway.
 
 ## TTN/MQTT Gateway
-TODO
+The Gateway is responsible of the forwarding of the incoming data from The Things Network to the Cloud.
+
+Once running, the Gateway launches a client that subscribes to the TTN's broker at the topic _+/devices/+/up_ using as username the name of the TTN Application and as password the Applocation Access Key.
+
+Data are received from the boards as a json string, then the emitting board is identified by its ID and the payloads are so forwarded using MQTT protocol.
 
 ## Hi-Fi System
 TODO
