@@ -20,6 +20,8 @@ TalkingChalks uses different bracelets to meet everyone’s needs. There is a br
 
 #### Why a bracelet? 
 TaklingChalks works with a bracelet so that everyone can use it. It is mainly thought for children and elder people, which don’t usually have smartphones or an internet connection. 
+#### How does the game work?
+
 #### What is the prize? 
 The prize can be something from Sapienza store, like a reusable Sapienza bottle. In this case the important thing is not the prize itself, but keeping the children focused on the tour. *This is only a suggestion to make the game more entertaining, we haven't discussed with Sapienza Store or the museum management to see if this is actuable.*
 
