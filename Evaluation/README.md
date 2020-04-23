@@ -8,10 +8,13 @@ We have carried out a survey to analyse the habits of museum visitors and divide
 <br>Only 4,5% of people didn't like our idea of a personalized tour, they think that audio guide is already sufficient and they prefer visit the museum alone. Since TalkingChalks consists of a personalized audio guide, we can take these results as positive.
 <br>
 ## FAQ
+
 #### What is TalkingChalks?
-TalkingChalks is an IoT system that can be used in a museum with a twofold purpose. The first is to help visitors during the tour providing information about the museum, the statues and the story behind them. The second is to keep children focused on the tour with an interactive game and a prize for the first classified (*this is only a suggestion to make the game more entertaining, we haven't discussed with Sapienza Store or the museum management to see if this is actuable.*).
+TalkingChalks is an IoT system that can be used in a museum with a twofold purpose. The first is to help visitors during the tour providing information about the museum, the statues and the story behind them. The second is to keep children focused on the tour with an interactive game and a prize for the first classified (*this is only a suggestion to make the game more entertaining, we haven't discussed with Sapienza Store or the museum management to see if this is actuable*).
+
 #### How does it work?
 TalkingChalks works with special bracelets. They can activate sensors placed in specific points and an audio description of the statue will be played out loud. The audio description changes according to the typology of the bracelet that is activating it. The sensors are activated by bracelets and not by people in proximity because the museum is a noisy environment full of students who study and have classes. Moreover counting how many times sensors have been activated by the bracelets, we can have an overview on the most visited statues of the collection.
+
 #### Why is TalkingChalks different?
 TalkingChalks’ innovation is that the tour is more interactive and fun, especially for children. Plus, students from classical studies and from theatre courses could contribute to our project providing the correct information in the best way. 
 
@@ -20,6 +23,7 @@ TalkingChalks uses different bracelets to meet everyone’s needs. There is a br
 
 #### Why a bracelet? 
 TaklingChalks works with a bracelet so that everyone can use it. It is mainly thought for children and elder people, which don’t usually have smartphones or an internet connection. 
+
 #### How does the game work?
 
 #### What is the prize? 
