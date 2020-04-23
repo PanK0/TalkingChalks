@@ -1,5 +1,7 @@
 # Architecture
 
+![](pics/architecture.png)
+
 ## General
 Due to the quarantine circumstances that made it impossible for us to put our hands on the real boards, the project is presented in a semi-simulated environment using the [iot-lab.info](https://www.iot-lab.info/) real testbed facility and [RIOT-OS](https://riot-os.org/) to provide a portable and functional application: in this way the whole system is easy replicable and ready to be used.
 The general idea is as follows:
