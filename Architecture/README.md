@@ -51,7 +51,10 @@ They can be connected to the electric system or powered by batteries.
 <img src="pics/playback.png" width="130"></img>
 
 # Cloud
+Azure IoT Hub by Microsoft is a managed service hosted in the cloud that acts as a central message hub for bidirectional communication between the IoT application and the device it manages. It has a lot of functionalities for all the types of applications, in our project we will use it as MQTT broker to receive messages sent by the devices and store the data in CosmoDB, which is an integrated service.
+
 <img src="pics/cloud.png" width="130"></img>
 
 # Database
+Azure CosmoDB is a multi-model database service for any scale. It guarantees a global distribution, high-availability and low latency. 
 <img src="pics/database.png" width="130"></img>
