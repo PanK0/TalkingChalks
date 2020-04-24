@@ -1,7 +1,5 @@
 # Architecture
 
-![](pics/architecture.png)
-
 ## General
 The project is presented in a semi-simulated environment using the [iot-lab.info](https://www.iot-lab.info/) real testbed facility and [RIOT-OS](https://riot-os.org/) to provide a portable and functional application, in this way the whole system is easy replicable and ready to be used.
 <br/>The general idea is as follows:
@@ -13,6 +11,8 @@ Once a user with a bracelet steps next to a statue, a sensor recognizes the user
 The gateway forwards data to the Cloud and sends the material to reproduce to an HiFi System incorporated in the statue, so the user can hear the personalized description.
 
 When in the Cloud, data can be stored into a database and they will be ready to be analyzed. 
+
+![](pics/architecture.png)
 
 # LoRaWAN Boards
 [LoRaWAN](https://lora-alliance.org/about-lorawan): Long Range Wide Area Network is a communication protocol with high efficiency peculiarities. LoRaWAN is based on low power consumption and a wide communication range belonging to a technologies category named LPWAN - Low Power Wide Area Network, useful in terms of sensors to use the least energy as possible.
