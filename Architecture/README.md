@@ -3,17 +3,16 @@
 ![](pics/architecture.png)
 
 ## General
-Due to the quarantine circumstances that made it impossible for us to put our hands on the real boards, the project is presented in a semi-simulated environment using the [iot-lab.info](https://www.iot-lab.info/) real testbed facility and [RIOT-OS](https://riot-os.org/) to provide a portable and functional application: in this way the whole system is easy replicable and ready to be used.
-The general idea is as follows:
+The project is presented in a semi-simulated environment using the [iot-lab.info](https://www.iot-lab.info/) real testbed facility and [RIOT-OS](https://riot-os.org/) to provide a portable and functional application, in this way the whole system is easy replicable and ready to be used.
+<br/>The general idea is as follows:
 
-A bracelet is provided to the users with a premade internal general profile to identify what kind of user is visiting the museum. Profiles are essential to let the application know the language of the user and the level of detail for the presentation of the artifacts.
+Each user is provided with a bracelet different for every kind of user that is visiting the museum. Profiles are essential to let the application know the language of the user and the level of detail for the presentation of the artifacts.
 
-
-Once a user with a bracelet steps next to a statue a sensor recognizes the user profile and, using [LoRa](https://en.wikipedia.org/wiki/LoRa#LoRaWAN) technology, sends the information to the Cloud through the gateway.
+Once a user with a bracelet steps next to a statue, a sensor recognizes the user profile and sends the information to the Cloud through the gateway using [LoRa](https://en.wikipedia.org/wiki/LoRa#LoRaWAN) technology.
 
 The gateway forwards data to the Cloud and sends the material to reproduce to an HiFi System incorporated in the statue, so the user can hear the personalized description.
 
-When in the Cloud, data can be stored into a database and they will be ready to be analyzed.
+When in the Cloud, data can be stored into a database and they will be ready to be analyzed. 
 
 ## LoRaWAN Boards
 [LoRaWAN](https://lora-alliance.org/about-lorawan): Long Range Wide Area Network is a communication protocol with high efficiency peculiarities. LoRaWAN is based on low power consumption and a wide communication range belonging to a technologies category named LPWAN - Low Power Wide Area Network, useful in terms of sensors to use the least energy as possible.
@@ -22,9 +21,7 @@ With [iot-lab.info](https://www.iot-lab.info/) in our project we are going to us
 Each board has a beacon sensor able to identify a bracelet's profile ant it is also equipped with an Hi-Fi System.
 
 ## Bracelet 
-The Bracelet is the key point of the entire system.
-
-It stores the premade user profiles and it's also made of some buttons - for let people enjoy an interactive tour - and a beacon sensor to be identified by the board: the profile ID is so sent to the LoRaWAN board and an appropirate guide track will be reproduced.
+The Bracelet is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board and some buttons to let people enjoy an interactive tour. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced.
 
 ## The Things Network
 [The Things Network](https://www.thethingsnetwork.org/) provides a set of open tools and a global, open network to build an IoT application at low cost.
