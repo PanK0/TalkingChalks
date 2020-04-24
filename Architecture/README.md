@@ -57,4 +57,5 @@ Azure IoT Hub by Microsoft is a managed service hosted in the cloud that acts as
 
 # Database
 Azure CosmoDB is a multi-model database service for any scale. It guarantees a global distribution, high-availability and low latency. 
+
 <img src="pics/database.png" width="130"></img>
