@@ -20,10 +20,7 @@ semtech_loramac_t loramac;
 *  Generating random values for the sensors simulation
 * */
 
-const char *levels[3];
-levels[0] = "Maria"
-levels[1] = "Hugo"
-levels[2] = "Ettore"
+char levels[3][10] = {"Maria", "Hugo", "Ettore"};
 
 int get_random_value(int lower, int upper) {
     return ( rand() % (upper + 1 - lower) + lower);
@@ -32,7 +29,7 @@ int get_random_value(int lower, int upper) {
 int get_random_payload(char* payload) {
     int profile = get_random_value(0, 2);
 
-    sprintf(payload, "{\"Profile\": \"%d\"}", levels[profile]);
+    sprintf(payload, "{\"Profile\": \"%s\"}", levels[profile]);
 
     return 0;
 }
