@@ -18,7 +18,6 @@ When in the Cloud, data can be stored into a database and they will be ready to 
 [LoRaWAN](https://lora-alliance.org/about-lorawan): Long Range Wide Area Network is a communication protocol with high efficiency peculiarities. LoRaWAN is based on low power consumption and a wide communication range belonging to a technologies category named LPWAN - Low Power Wide Area Network, useful in terms of sensors to use the least energy as possible.
 With [iot-lab.info](https://www.iot-lab.info/) in our project we are going to use [B-L072Z-LRWAN1 LoRa Kit](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) programmable using [RIOT-OS](https://riot-os.org/).
 
-<<<<<<< HEAD
 Each board has a beacon sensor able to identify a bracelet's profile ant it is also equipped with an Hi-Fi System.
 
 
