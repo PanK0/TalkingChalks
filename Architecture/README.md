@@ -20,13 +20,11 @@ With [iot-lab.info](https://www.iot-lab.info/) in our project we are going to us
 
 Each board has a beacon sensor able to identify a bracelet's profile ant it is also equipped with an Hi-Fi System.
 
-<img src="pics/board.png" height="130"></img>
 
 # Bracelet
 
 The Bracelet is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board and some buttons to let people enjoy an interactive tour. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced.
 
-<img src="pics/bracelet.png" height="100"></img>
 
 # The Things Network
 [The Things Network](https://www.thethingsnetwork.org/) provides a set of open tools and a global, open network to build an IoT application at low cost.
@@ -40,7 +38,6 @@ Once running, the Gateway launches a client that subscribes to the TTN's broker 
 
 Data are received from the boards as a json string, then the emitting board is identified by its ID and the payloads are so forwarded using MQTT protocol.
 
-<img src="pics/gateway.png" width="130"></img>
 
 # Hi-Fi System
 
@@ -48,10 +45,7 @@ Simple speakers connected to the LoRaWAN board, the main role of these instrumen
 
 They can be connected to the electric system or powered by batteries.
 
-<img src="pics/playback.png" width="130"></img>
 
 # Cloud
-<img src="pics/cloud.png" width="130"></img>
 
 # Database
-<img src="pics/database.png" width="130"></img>
