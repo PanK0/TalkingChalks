@@ -2,7 +2,7 @@
 ## Survey
 We have carried out a survey to analyse the habits of museum visitors and divide them in different categories. We think that this is useful to understand if people will like TalkingChalks' concept. Many people answered to the [Italian version](https://forms.gle/jZ4fBaXa6VDhBdABA), but there is also an [English one](https://forms.gle/cDC3gm15HeV4toPn9).
 <br>The results of the survey shows that TalkingChalks would be widely accepted by people, because they prefer audio guides and not being limited when visiting a museum. For the interactive part for children we haven't get any feedback, but we think that it would be a good idea to have fun learning new things.
-![](pics/musei.png)
+![](pics/musei.jng)
 
 <br/>In total 131 people completed our form, 95,4% of them aged from 19 to 65. We tried to collect information from people of every age and habits, but unfortunately we had few answers from elder people, in which we were interested to, and zero answers from children (less than 14 years old), the users of our interactive application.
 <br>Luckily we have received many answers by adults who take children to exhibitions and although taking children to museum is easy, is quite difficult keep the focus on the visit and (sometimes) provide information to the children. In this optic, TalkingChalks would be very useful because it can give children the right information and keep them focused on the tour with an interactive game.
