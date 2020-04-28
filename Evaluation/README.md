@@ -15,19 +15,19 @@ We have carried out a survey to analyse the habits of museum visitors and divide
 TalkingChalks is an IoT system that can be used in a museum with a twofold purpose. The first is to help visitors during the tour providing information about the museum, the statues and the story behind them. The second is to keep children focused on the tour with an interactive game and a prize for the first classified (*this is only a suggestion to make the game more entertaining, we haven't discussed with Sapienza Store or the museum management to see if this is actuable*).
 
 #### How does it work?
-TalkingChalks works with special bracelets. They can activate sensors placed in specific points and an audio description of the statue will be played out loud. The audio description changes according to the typology of the bracelet that is activating it. The sensors are activated by bracelets and not by people in proximity because the museum is a noisy environment full of students who study and have classes. Moreover counting how many times sensors have been activated by the bracelets, we can have an overview on the most visited statues of the collection.
+TalkingChalks works with special smartbands. They can activate sensors placed in specific points and an audio description of the statue will be played out loud. The audio description changes according to the typology of the smartbands that is activating it. The sensors are activated by smartbands and not by people in proximity because the museum is a noisy environment full of students who study and have classes. Moreover counting how many times sensors have been activated by the smartbands, we can have an overview on the most visited statues of the collection.
 
 #### Why is TalkingChalks different?
 TalkingChalks’ innovation is that the tour is more interactive and fun, especially for children. Plus, students from classical studies and from theatre courses could contribute to our project providing the correct information in the best way.
 
 #### Does it answer the needs of the user?
-TalkingChalks uses different bracelets to meet everyone’s needs. There is a bracelet for people passionate about arts so that they can have detailed descriptions, a bracelet for people who are not really interested and want to know the basic information. There is also a bracelet for teachers or parents who are visiting the museum with children, so that they can have information in a simplified way. Finally there is a bracelet with buttons on it, so that children can play and answer questions.
+TalkingChalks uses different smartbands to meet everyone’s needs. There is a smartband for people passionate about arts so that they can have detailed descriptions, a smartband for people who are not really interested and want to know the basic information. There is also a smartband for teachers or parents who are visiting the museum with children, so that they can have information in a simplified way. Finally there is a smartband with buttons on it, so that children can play and answer questions.
 
-#### Why a bracelet?
-TaklingChalks works with a bracelet so that everyone can use it. It is mainly thought for children and elder people, which don’t usually have smartphones or an internet connection.
+#### Why a smartband?
+TaklingChalks works with a smartband so that everyone can use it. It is mainly thought for children and elder people, which don’t usually have smartphones or an internet connection.
 
 #### How does the game work?
-The game consists of a sequence of questions about the museum and the guided tour. Children can answer questions pressing the corresponding button on the bracelet.
+The game consists of a sequence of questions about the museum and the guided tour. Children can answer questions pressing the corresponding button on the smartband.
 
 #### What is the prize?
 The prize can be something from Sapienza store, like a reusable Sapienza bottle. In this case the important thing is not the prize itself, but keeping the children focused on the tour. *This is only a suggestion to make the game more entertaining, we haven't discussed with Sapienza Store or the museum management to see if this is actuable.*
