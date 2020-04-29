@@ -21,7 +21,7 @@ With [iot-lab.info](https://www.iot-lab.info/) in our project we are going to us
 Each board based on STM Nucleo system has a beacon/nfc sensor able to identify a smartband's profile and it is also equipped with an Hi-Fi System.
 
 # Smartband
-The smartband is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board and some buttons to let people enjoy an interactive tour. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced.
+The smartband is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced.
 
 # The Things Network
 [The Things Network](https://www.thethingsnetwork.org/) provides a set of open tools and a global, open network to build an IoT application at low cost.
