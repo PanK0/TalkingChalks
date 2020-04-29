@@ -11,7 +11,7 @@ We have carried out a survey to analyse the habits of museum visitors and divide
 <br>Survey results show that the majority of people use audio guides and even in this case TalkingChalks can be a good option because it is based on audio description. The difference with the typical audio guide is that our audio description will be different for every typology of visiors.
 
 ## Technical Evaluation
-For the technical evaluation we have performed a simulation of the system. The RIOT-OS app randomly selects one of the user profiles to TheThingsNetwork app. The gateway connects to TTTN app, receives the message with profile and prints the description of the statue. You can check it in [Preliminary_Test folder](https://github.com/PanK0/TalkingChalks/tree/master/Preliminary_Test).
+For the technical evaluation we have performed a simulation of the system. We have created 2 TheThingsNetwork devices, one for each statue. The RIOT-OS app can connect to TTN app using one of the devices created, then randomly selects one of the user profiles and sends it to TTN app. The gateway connects to TTN app, receives the message and prints a different description of the statue depending on the profile. You can check it in [Preliminary_Test folder](https://github.com/PanK0/TalkingChalks/tree/master/Preliminary_Test).
 
 ## FAQ
 
