@@ -1,11 +1,15 @@
 # Evaluation
 ## Survey
 We have carried out a survey to analyse the habits of museum visitors and divide them in different categories. We think that this is useful to understand if people will like TalkingChalks' concept. Many people answered to the [Italian version](https://forms.gle/jZ4fBaXa6VDhBdABA), but there is also an [English one](https://forms.gle/cDC3gm15HeV4toPn9).
-<br>The results of the survey shows that TalkingChalks would be widely accepted by people, because they prefer audio guides and not being limited when visiting a museum. For the interactive part for children we haven't get any feedback, but we think that it would be a good idea to have fun learning new things.
+
+![](pics/custom.PNG)
+<br>The results of the survey shows that TalkingChalks would be widely accepted by people, because they prefer audio guides and not being limited when visiting a museum. Only 4,5% of people didn't like our idea of a personalized tour, they think that audio guide is already sufficient and they prefer visit the museum alone. Since TalkingChalks consists of a customized audio guide, we can take these results as positive. For the interactive part for children we haven't get any feedback, but we think that it would be a good idea to have fun learning new things.
 <br>In total 131 people completed our form, 95,4% of them aged from 19 to 65. We tried to collect information from people of every age and habits, but unfortunately we had few answers from elder people, in which we were interested to, and zero answers from children (less than 14 years old), the users of our interactive application.
 <br>Luckily we have received many answers by adults who take children to exhibitions and although taking children to museum is easy, is quite difficult keep the focus on the visit and (sometimes) provide information to the children. In this optic, TalkingChalks would be very useful because it can give children the right information and keep them focused on the tour with an interactive game.
+
+![](pics/habits.PNG)
 <br>Survey results show that the majority of people use audio guides and even in this case TalkingChalks can be a good option because it is based on audio description. The difference with the typical audio guide is that our audio description will be different for every typology of visiors.
-<br>Only 4,5% of people didn't like our idea of a personalized tour, they think that audio guide is already sufficient and they prefer visit the museum alone. Since TalkingChalks consists of a personalized audio guide, we can take these results as positive.
+<br>
 
 ## FAQ
 
