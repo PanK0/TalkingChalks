@@ -10,6 +10,7 @@ A smartband with the most suitable profile will be provided to each visitor, so 
 [Gianluca Panici](https://www.linkedin.com/in/gianluca-panici-452347146)
 
 ## [Design](https://github.com/PanK0/TalkingChalks/blob/master/Design/README.md)
+You can check out the [video](https://youtu.be/3Ya9r6RwPLI) for more information.
 
 ## [Architecture](https://github.com/PanK0/TalkingChalks/blob/master/Architecture/README.md)
 
