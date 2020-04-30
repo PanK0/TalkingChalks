@@ -16,3 +16,6 @@ You can check out the [video](https://youtu.be/6nb3dxTIddg) for more information
 Here's a [video](https://www.youtube.com/watch?v=5a8aUJ3mY7I&feature=youtu.be) description of the architecture part.
 
 ## [Evaluation](https://github.com/PanK0/TalkingChalks/blob/master/Evaluation/README.md)
+
+## Presentation
+We have prepared a power point [presentation](https://github.com/PanK0/TalkingChalks/tree/master/Presentation).
