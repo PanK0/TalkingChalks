@@ -2,6 +2,9 @@
 
 ![](pics/architecture.png)
 
+## Video Presentation
+Take a look at the video presentation @ https://youtu.be/5a8aUJ3mY7I
+
 ## General
 The project is presented in a semi-simulated environment using the [iot-lab.info](https://www.iot-lab.info/) real testbed facility and [RIOT-OS](https://riot-os.org/) to provide a portable and functional application, in this way the whole system is easy replicable and ready to be used.
 <br/>The general idea is as follows:
