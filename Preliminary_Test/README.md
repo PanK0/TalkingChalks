@@ -13,6 +13,11 @@ Then set up the lora nodes and run
 ```
 loramac start
 ```
+## What are we testing
+In this simple example we are testing a general behaviour of the application: when an event corresponding to a certain profile is generated on the lora boards - simulating the proximity between the smartband and the statue - the data of the profile is sent to the gateway that identify it and know what audio is to reproduce.
+
+This is only for a preliminary demonstration, so the whole system is expected to be a little different.
+
 ## Some pictures of the expected output
 [![test1.png](https://i.postimg.cc/90GwyNcG/test1.png)](https://postimg.cc/Wq14v8F3)
 
