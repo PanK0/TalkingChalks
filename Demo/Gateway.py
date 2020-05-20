@@ -36,18 +36,6 @@ class Device :
         self.device_id = device_id
         self.assigned_profile = 'default'
 
-    def getName() :
-        return self.name
-
-    def getID() :
-        return self.device_id
-
-    def getProfile() :
-        return self.assigned_profile
-
-    def setProfile(given_profile) :
-        self.assigned_profile = given_profile
-
     def __str__(self) :
         return ("Device Name : " + self.name + ", Device ID : " + self.device_id)
 
@@ -81,16 +69,16 @@ def upload_devices() :
 # Function for getting a device from a list of devices given the device_id
 def get_device(device_id, devices) :
     for element in devices :
-        if (element.getID() == device_id) :
+        if (element.device_id == device_id) :
             return element
         else :
             print ("No device with ID " + device_id + " found.")
 
-# Function for assigning a given profile to a device given the device id and a device list
+# Function to assign a given profile to a device given the device id and a device list
 def assign_profile(device_id, profile, devices) :
     for element in devices :
-        if (element.getID() == device_id) :
-            element.setProfile(profile)
+        if (element.device_id == device_id) :
+            element.assigned_profile = profile
             print ("Profile assigned")
         else :
             print ("No device with ID " + device_id + " found.")
@@ -124,12 +112,12 @@ def on_message(client, userdata, message) :
     print (received_message)
 
     sender_device = get_device(received_message['dev_id'], devices)
-    assign_profile(sender_device.getID(), received_message[', profile_id'], devices)
+    #assign_profile(sender_device.device_id, received_message['profile_id'], devices)
 
     print ("A message has been received")
     print ("Sender Device : " + received_message['dev_id'])
-    print ("Device Name : " + sender_device.getName() )
-    print ("Profile Required : " + received_message[', profile_id'])
+    print ("Device Name : " + sender_device.name )
+    print ("Profile Required : " + received_message['profile_id'])
 
     print("***********************************\n")
 
