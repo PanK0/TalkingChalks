@@ -31,7 +31,7 @@ int get_random_payload(char* payload) {
     int profile = get_random_value(0, 2);
     int id = get_random_value(0, 2);
 
-    sprintf(payload, "{\"dev_id\" : \"%s\"  \", profile_id\": \"%s\"}", ids[id], levels[profile]);
+    sprintf(payload, "{\"dev_id\" : \"%s\", \"profile_id\": \"%s\"}", ids[id], levels[profile]);
 
     return 0;
 }

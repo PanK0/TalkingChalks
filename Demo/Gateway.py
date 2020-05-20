@@ -34,7 +34,7 @@ class Device :
     def __init__(self, name, device_id) :
         self.name = name
         self.device_id = device_id
-        self.assigned_profile = None
+        self.assigned_profile = 'default'
 
     def getName() :
         return self.name
@@ -107,24 +107,37 @@ def on_subscribe(client, userdata, mid, granted_qos) :
 # Callback for message event
 def on_message(client, userdata, message) :
     print("\n***********************************")
+    #print (message.payload)
 
     global devices
-    received_message = json.loads(message.payload)
+    generic_payload = json.loads(message.payload) # dict
+
+    print ("AAA Generic payload")
+    print (generic_payload)
+
+    payload_dict = generic_payload['payload_fields'] #dict
+    print("BBB payload_dict")
+    print(payload_dict)
+
+    received_message = json.loads(payload_dict['string']) #dict
+    print("CCC received_message ")
+    print (received_message)
+
     sender_device = get_device(received_message['dev_id'], devices)
-    assign_profile(sender_device.getID(), received_message['profile_id'], devices)
+    assign_profile(sender_device.getID(), received_message[', profile_id'], devices)
 
     print ("A message has been received")
     print ("Sender Device : " + received_message['dev_id'])
     print ("Device Name : " + sender_device.getName() )
-    print ("Profile Required : " + received_message['profile_id'])
+    print ("Profile Required : " + received_message[', profile_id'])
 
     print("***********************************\n")
 
 # Setting up Data Receiver from TTN
 client = paho.Client("Gateway")                        # create client for data receiver from TTN
 client.on_message = on_message                         # define what to do when a message is received
-client.on_subscribe = on_subscribe                     # event handler
 client.username_pw_set(ttn_user, password=ttn_key)     # access with the right credentials
+client.on_subscribe = on_subscribe                     # event handler
 client.connect(ttn_host, ttn_port, keepalive=60)       # establish connection
 client.subscribe(ttn_topic, qos=1)
 
