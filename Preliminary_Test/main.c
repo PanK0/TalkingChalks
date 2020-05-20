@@ -21,6 +21,7 @@ semtech_loramac_t loramac;
 * */
 
 char levels[3][10] = {"Maria", "Hugo", "Ettore"};
+char ids[3][10] = {"ID00", "ID01", "ID02"};
 
 int get_random_value(int lower, int upper) {
     return ( rand() % (upper + 1 - lower) + lower);
@@ -28,8 +29,9 @@ int get_random_value(int lower, int upper) {
 
 int get_random_payload(char* payload) {
     int profile = get_random_value(0, 2);
+    int id = get_random_value(0, 2);
 
-    sprintf(payload, "{\"Profile\": \"%s\"}", levels[profile]);
+    sprintf(payload, "{\"dev_id\" : \"%s\"  \", profile_id\": \"%s\"}", ids[id], levels[profile]);
 
     return 0;
 }
