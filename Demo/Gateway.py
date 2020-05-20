@@ -50,9 +50,7 @@ BEGIN CLIENT SETTINGS
 Settings for the client: callbacks, functions and variables for the gateway client
 '''
 
-# Variables for devices    print ("Device Name")
-payload_E = ""
-payload_F = ""
+# Variables for devices
 filename = 'devices.txt'
 devices = [None] * 0
 
