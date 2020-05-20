@@ -1,0 +1,3 @@
+Penelope_statue ID00
+Odisseus_statue ID01
+Gennaro_statue ID02
