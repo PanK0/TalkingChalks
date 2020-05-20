@@ -70,9 +70,9 @@ def upload_devices() :
 def get_device(device_id, devices) :
     for element in devices :
         if (element.device_id == device_id) :
+            print ("Device found!")
             return element
-        else :
-            print ("No device with ID " + device_id + " found.")
+    print ("No device with ID " + device_id + " found.")
 
 # Function to assign a given profile to a device given the device id and a device list
 def assign_profile(device_id, profile, devices) :
@@ -80,8 +80,6 @@ def assign_profile(device_id, profile, devices) :
         if (element.device_id == device_id) :
             element.assigned_profile = profile
             print ("Profile assigned")
-        else :
-            print ("No device with ID " + device_id + " found.")
 
 
 # Callback for connection
@@ -100,24 +98,24 @@ def on_message(client, userdata, message) :
     global devices
     generic_payload = json.loads(message.payload) # dict
 
-    print ("AAA Generic payload")
-    print (generic_payload)
+    #print ("AAA Generic payload")
+    #print (generic_payload)
 
     payload_dict = generic_payload['payload_fields'] #dict
-    print("BBB payload_dict")
-    print(payload_dict)
+    #print("BBB payload_dict")
+    #print(payload_dict)
 
     received_message = json.loads(payload_dict['string']) #dict
-    print("CCC received_message ")
-    print (received_message)
+    #print("CCC received_message ")
+    #print (received_message)
 
     sender_device = get_device(received_message['dev_id'], devices)
-    #assign_profile(sender_device.device_id, received_message['profile_id'], devices)
+    assign_profile(sender_device.device_id, received_message['profile_id'], devices)
 
     print ("A message has been received")
     print ("Sender Device : " + received_message['dev_id'])
     print ("Device Name : " + sender_device.name )
-    print ("Profile Required : " + received_message['profile_id'])
+    print ("Profile Required : " + received_message['profile_id'] + ", assigned : " + sender_device.assigned_profile)
 
     print("***********************************\n")
 
@@ -143,7 +141,6 @@ devices = upload_devices()
 for element in devices :
     print (element)
 
-client.loop_start()
 client.loop_forever()
 
 '''
