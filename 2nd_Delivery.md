@@ -27,7 +27,6 @@ Audio playback is simulated printing different string on device terminal.
 We noticed that our project lacked interactivity so we decided to make visitors part of the museum's art. Using visitor's interactions with the statues we plan to create a digital modern art paiting. Stay tuned.
 
 
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Bob_at_Easel.jpg/220px-Bob_at_Easel.jpg
-" alt="alt text" width="250px">
+<img src="https://www.esportsmag.it/wp-content/uploads/2019/03/BobRoss_Twitch-696x454.jpg" alt="alt text" width="250px">
 
 
