@@ -7,6 +7,6 @@ Second survey
 ### Results
 
 ## Objective
-Accessibility, reliability, simplicity, security and privacy, usability.
+Accessibility, reliability, **SCALABILITY** simplicity, security and privacy, usability.
 
 ## Technical evaluation
