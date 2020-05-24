@@ -1,11 +1,4 @@
-# Notes for Gateway
-
-## Requirements
-[paho-mqtt](https://pypi.org/project/paho-mqtt/)
-
-***
-
-## General Behaviour
+# General Behaviour
 The Gateway starts and loads all the registered devices attached to statues.
 
 Lora nodes send a JSON string like the following one
@@ -21,54 +14,36 @@ TODO : data are forwarded to the cloud.
 
 ***
 
-## TTN Stuffs 
-- `ttn_host = 'eu.thethings.network' `, standard TTN host for MQTT communication
-- `ttn_port = 1883`, TTN service port 
-- `ttn_topic = '+/devices/+/up'`, TTN topic on which data are published 
-- `ttn_user = APP_NAME`, TTN Application's name
-- `ttn_key = APP_KEY`, TTN App's Access Key
+## Requirements
+- [paho-mqtt](https://pypi.org/project/paho-mqtt/)
+- [IOT-LAB](https://www.iot-lab.info) account
+- TheThingsNetwork ([TTN](https://console.thethingsnetwork.org)) account
+- [RIOT OS](https://riot-os.org/)
+- [Gateway file](https://github.com/PanK0/TalkingChalks/tree/master/Demo/Gateway) knowledge
+- [LoRa file](https://github.com/PanK0/TalkingChalks/tree/master/Demo/LoRa) knowledge 
 
-* * *
+***
+## How To test
 
-## Device
-A Device has fields `name`, `device_id` and `assigned_profile`.
-All the devices are stored in a .txt file, one device per file, in the following format:
-`<name> <device_id>`
+### Gateway
+- Run the `Gateway.py` giving `python Gateway.py` on your local machine
 
-where 
-**name** = name of the statue where the device is attached
+### LoRa
+On [IOT-LAB](https://www.iot-lab.info) follow [this tutorial](https://www.iot-lab.info/tutorials/riot-ttn/) with some exceptions:
+- at point (2), when you submit the experiment, change -l 1 with -l 3 in order to reserve two lorawan boards
+- at point (7) execute the command once per board
+- at point (8) do the operations per each board
+- instead of following point (10) just give the command `loramac set dev_id`, where `dev_id` is the ID of the device you have choosen between `dev_00`, `dev_01`, `dev_02`
+- instead of following point (12) just give the command `loramac start`
 
-**device_id** = device ID on TTN.
-
-When the gateway starts, all registered devices are loaded by the function `upload_devices()`.
 
 ***
 
-## on_message()
-Callback, called when a message arrives.
+## Directory Example and specifications
+Here is an example on how the directory tree can be:
 
-The `message` field is an object of class **message** with members: [*topic*, *payload*, *qos*].
+[![dirtree.png](https://i.postimg.cc/jj5jTsHZ/dirtree.png)](https://postimg.cc/MnCwbJrQ)
 
-We are interested in **payload**.
-- `message.payload` is a string. We want lora boards sending the payload formatted in a JSON string, so we can transform it into a dictionary.
+You can find the `main.c` file in the [/LoRa](https://github.com/PanK0/TalkingChalks/tree/master/Demo/LoRa) folder.
 
-After some transformations we obtain `received_message`, that is a dictionnary, and in the dictionary are:
-	- `dev_id` , that is the device id. It's useful to recognise the board who sent the request for the profile identification.
-	- `profile_id` , that is the profile who requested the service.
-	- Example string: 
-	`{'dev_id' : 'Penelope_statue', 'profile_id' : 'hugo'}`
-- `message.topic` contains the topic in where the message arrives.
-
-**What happens when a message arrives?** When a message arrives it is transformed into a `received_message` dictionnary.
-
-Then, through the `get_device()` function, there is a security check on the device to verify if it is a registered device and then the requested profile is assigned to the device through the `assign_profile()` function.
-
-NB : the effective assignation has to be done. For now the profile is assigned only locally.
-
-***
-
-## Client
-- `client = paho.Client(CLIENTNAME)` , where CLIENTMANE is a casual name to identify the Gateway Client that is subscribing `ttn_topic`
-- `client.on_message = on_message` , on_message() callback to run when a message arrives on the topic
-- `client.username_pw_set(ttn_user, password=ttn_key)` , to access with TTN Application credentials
-- `client.connect(ttn_host, ttn_port, keepalive=60)` , to establish the connection with TTN
+You can find the `Gateway.py` and the `devices.txt` file in the [/Gateway](https://github.com/PanK0/TalkingChalks/tree/master/Demo/Gateway) folder.

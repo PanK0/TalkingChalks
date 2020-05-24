@@ -398,24 +398,24 @@ static int _cmd_loramac(int argc, char **argv)
             strcpy(devid, "dev_00");
         }
         else if (strcmp("dev_01", argv[2]) == 0) {
-          fmt_hex_bytes(dev_01_deveui, "00BBBC8EC6FF6DD2");
-          fmt_hex_bytes(dev_01_appeui, "70B3D57ED002F7A1");
-          fmt_hex_bytes(dev_01_appkey,"86C9166C4540AC53B4EA29526D2C0306");
-          semtech_loramac_set_deveui(&loramac, dev_01_deveui);
-          semtech_loramac_set_appeui(&loramac, dev_01_appeui);
-          semtech_loramac_set_appkey(&loramac, dev_01_appkey);
-          semtech_loramac_set_dr(&loramac, dr_standard);
-          strcpy(devid, "dev_01");
+            fmt_hex_bytes(dev_01_deveui, "00BBBC8EC6FF6DD2");
+            fmt_hex_bytes(dev_01_appeui, "70B3D57ED002F7A1");
+            fmt_hex_bytes(dev_01_appkey,"86C9166C4540AC53B4EA29526D2C0306");
+            semtech_loramac_set_deveui(&loramac, dev_01_deveui);
+            semtech_loramac_set_appeui(&loramac, dev_01_appeui);
+            semtech_loramac_set_appkey(&loramac, dev_01_appkey);
+            semtech_loramac_set_dr(&loramac, dr_standard);
+            strcpy(devid, "dev_01");
         }
         else if (strcmp("dev_02", argv[2]) == 0) {
-          fmt_hex_bytes(dev_02_deveui, "0077981F53BF8BD9");
-          fmt_hex_bytes(dev_02_appeui, "70B3D57ED002F7A1");
-          fmt_hex_bytes(dev_02_appkey,"685E563574362452A88F75074097E35E");
-          semtech_loramac_set_deveui(&loramac, dev_02_deveui);
-          semtech_loramac_set_appeui(&loramac, dev_02_appeui);
-          semtech_loramac_set_appkey(&loramac, dev_02_appkey);
-          semtech_loramac_set_dr(&loramac, dr_standard);
-          strcpy(devid, "dev_02");
+            fmt_hex_bytes(dev_02_deveui, "0077981F53BF8BD9");
+            fmt_hex_bytes(dev_02_appeui, "70B3D57ED002F7A1");
+            fmt_hex_bytes(dev_02_appkey,"685E563574362452A88F75074097E35E");
+            semtech_loramac_set_deveui(&loramac, dev_02_deveui);
+            semtech_loramac_set_appeui(&loramac, dev_02_appeui);
+            semtech_loramac_set_appkey(&loramac, dev_02_appkey);
+            semtech_loramac_set_dr(&loramac, dr_standard);
+            strcpy(devid, "dev_02");
         }
 
         else {
@@ -660,7 +660,7 @@ static int _cmd_loramac(int argc, char **argv)
 
             // Maintain this value high in order to avoid duty cycle restrictions
             int sleep = (int) get_random_value(40, 150);
-            printf ("Sleep for : %d", sleep);
+            printf ("Sleep for : %d secs\n", sleep);
             xtimer_sleep(sleep);
         }
         return 0;
