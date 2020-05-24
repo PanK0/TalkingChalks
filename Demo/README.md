@@ -42,6 +42,13 @@ The output should be like:
 
 [![pic2.png](https://i.postimg.cc/c4gz3fFW/pic2.png)](https://postimg.cc/Cz0JTnyr)
 
+## End User product [Draft]
+[Here](https://youtu.be/VByaZjvc5Bg) you can find a short video of how an user should see the system.
+
+In the video the LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
+
+It's possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles. 
+
 ***
 
 ## Directory Example and specifications
