@@ -15,10 +15,8 @@ Variables to interact with TTN
 ttn_host = 'eu.thethings.network'                                       # Host for TheThingsNetwork
 ttn_port = 1883                                                         # TTN service Port
 ttn_topic = '+/devices/+/up'                                            # TTN topic
-ttn_user = 'iotappan'                                                   # TTN Application's name
-ttn_key = 'ttn-account-v2.myG4JDRyLI_p3ylliDwH72pX7bkdRBRL8-fmWpJ0jio'  # TTN Application's Access Key
-ttn_dev_e = 'iotappan-dev-e'                                            # device E name
-ttn_dev_f = 'iotappan-dev-f'                                            # device F name
+ttn_user = 'talkingchalks'                                              # TTN Application's name
+ttn_key = 'ttn-account-v2.irz9S0BWYo_ydlT-PddsRSza7epCz6ScAfSP--qhdMM'  # TTN Application's Access Key
 
 '''
 END THE THINGS NETWORK
@@ -90,7 +88,7 @@ def on_subscribe(client, userdata, mid, granted_qos) :
 
 # Callback for message event
 def on_message(client, userdata, message) :
-    print("\n***********************************")
+    print("\n*********************************************")
     #print (message.payload)
 
     global devices
@@ -115,7 +113,7 @@ def on_message(client, userdata, message) :
     print ("Device Name : " + sender_device.name )
     print ("Profile Required : " + received_message['profile_id'] + ", assigned : " + sender_device.assigned_profile)
 
-    print("***********************************\n")
+    print("*********************************************\n")
 
 # Setting up Data Receiver from TTN
 client = paho.Client("Gateway")                        # create client for data receiver from TTN
