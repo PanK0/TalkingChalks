@@ -20,7 +20,7 @@ TODO : data are forwarded to the cloud.
 - TheThingsNetwork ([TTN](https://console.thethingsnetwork.org)) account
 - [RIOT OS](https://riot-os.org/)
 - [Gateway file](https://github.com/PanK0/TalkingChalks/tree/master/Demo/Gateway) knowledge
-- [LoRa file](https://github.com/PanK0/TalkingChalks/tree/master/Demo/LoRa) knowledge 
+- [LoRa file](https://github.com/PanK0/TalkingChalks/tree/master/Demo/LoRa) knowledge
 
 ***
 ## How To test
@@ -37,6 +37,10 @@ On [IOT-LAB](https://www.iot-lab.info) follow [this tutorial](https://www.iot-la
 - instead of following point (10) just give the command `loramac set dev_id`, where `dev_id` is the ID of the device you have choosen between `dev_00`, `dev_01`, `dev_02`
 - instead of following point (12) just give the command `loramac start`
 
+## Output
+The output should be like:
+
+[![pic2.png](https://i.postimg.cc/c4gz3fFW/pic2.png)](https://postimg.cc/Cz0JTnyr)
 
 ***
 
