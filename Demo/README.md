@@ -2,7 +2,7 @@
 The Gateway starts and loads all the registered devices attached to statues.
 
 Lora nodes send a JSON string like the following one
-`{'dev_id' : 'Penelope_statue', 'profile_id' : 'hugo'}`
+`{'dev_id' : 'dev_00', 'profile_id' : 'hugo'}`
 
 The Gateway receives the message and looks for the existance of the device.
 
