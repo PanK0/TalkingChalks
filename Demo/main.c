@@ -25,23 +25,14 @@ semtech_loramac_t loramac;
 uint8_t dev_00_deveui[LORAMAC_DEVEUI_LEN];
 uint8_t dev_00_appeui[LORAMAC_APPEUI_LEN];
 uint8_t dev_00_appkey[LORAMAC_APPKEY_LEN];
-fmt_hex_bytes(dev_00_deveui, "00E826F416B86F3F");
-fmt_hex_bytes(dev_00_appeui, "70B3D57ED002F7A1");
-fmt_hex_bytes(dev_00_appkey,"D4608EA823673E4381F3328AECE139EF");
 
 uint8_t dev_01_deveui[LORAMAC_DEVEUI_LEN];
 uint8_t dev_01_appeui[LORAMAC_APPEUI_LEN];
 uint8_t dev_01_appkey[LORAMAC_APPKEY_LEN];
-fmt_hex_bytes(dev_01_deveui, "00BBBC8EC6FF6DD2");
-fmt_hex_bytes(dev_01_appeui, "70B3D57ED002F7A1");
-fmt_hex_bytes(dev_01_appkey,"86C9166C4540AC53B4EA29526D2C0306");
 
 uint8_t dev_02_deveui[LORAMAC_DEVEUI_LEN];
 uint8_t dev_02_appeui[LORAMAC_APPEUI_LEN];
 uint8_t dev_02_appkey[LORAMAC_APPKEY_LEN];
-fmt_hex_bytes(dev_02_deveui, "0077981F53BF8BD9");
-fmt_hex_bytes(dev_02_appeui, "70B3D57ED002F7A1");
-fmt_hex_bytes(dev_02_appkey,"685E563574362452A88F75074097E35E");
 
 uint8_t dr_standard = 5;
 uint8_t join_type_standard = LORAMAC_JOIN_OTAA;
@@ -397,6 +388,9 @@ static int _cmd_loramac(int argc, char **argv)
             semtech_loramac_set_rx2_dr(&loramac, dr);
         }
         else if (strcmp("dev_00", argv[2]) == 0) {
+            fmt_hex_bytes(dev_00_deveui, "00E826F416B86F3F");
+            fmt_hex_bytes(dev_00_appeui, "70B3D57ED002F7A1");
+            fmt_hex_bytes(dev_00_appkey,"D4608EA823673E4381F3328AECE139EF");
             semtech_loramac_set_deveui(&loramac, dev_00_deveui);
             semtech_loramac_set_appeui(&loramac, dev_00_appeui);
             semtech_loramac_set_appkey(&loramac, dev_00_appkey);
@@ -404,6 +398,9 @@ static int _cmd_loramac(int argc, char **argv)
             strcpy(devid, "dev_00");
         }
         else if (strcmp("dev_01", argv[2]) == 0) {
+          fmt_hex_bytes(dev_01_deveui, "00BBBC8EC6FF6DD2");
+          fmt_hex_bytes(dev_01_appeui, "70B3D57ED002F7A1");
+          fmt_hex_bytes(dev_01_appkey,"86C9166C4540AC53B4EA29526D2C0306");
           semtech_loramac_set_deveui(&loramac, dev_01_deveui);
           semtech_loramac_set_appeui(&loramac, dev_01_appeui);
           semtech_loramac_set_appkey(&loramac, dev_01_appkey);
@@ -411,6 +408,9 @@ static int _cmd_loramac(int argc, char **argv)
           strcpy(devid, "dev_01");
         }
         else if (strcmp("dev_02", argv[2]) == 0) {
+          fmt_hex_bytes(dev_02_deveui, "0077981F53BF8BD9");
+          fmt_hex_bytes(dev_02_appeui, "70B3D57ED002F7A1");
+          fmt_hex_bytes(dev_02_appkey,"685E563574362452A88F75074097E35E");
           semtech_loramac_set_deveui(&loramac, dev_02_deveui);
           semtech_loramac_set_appeui(&loramac, dev_02_appeui);
           semtech_loramac_set_appkey(&loramac, dev_02_appkey);
