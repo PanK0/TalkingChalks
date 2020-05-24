@@ -31,6 +31,7 @@ TODO : data are forwarded to the cloud.
 ### LoRa
 On [IOT-LAB](https://www.iot-lab.info) follow [this tutorial](https://www.iot-lab.info/tutorials/riot-ttn/) with some exceptions:
 - at point (2), when you submit the experiment, change -l 1 with -l 3 in order to reserve two lorawan boards
+- at point (4), after cloning RIOT, copy the file [main.c](https://github.com/PanK0/TalkingChalks/blob/master/Demo/LoRa/main.c) in the RIOT/tests/pkg_semtech-loramac folder
 - at point (7) execute the command once per board
 - at point (8) do the operations per each board
 - instead of following point (10) just give the command `loramac set dev_id`, where `dev_id` is the ID of the device you have choosen between `dev_00`, `dev_01`, `dev_02`
