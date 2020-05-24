@@ -1,21 +1,33 @@
+# 2<sup>nd</sup> Delivery
 # TalkingChalks
-TalkingChalks is an IoT system that can be used in a museum. It can help visitors during the tour providing information about the museum, the statues and the story behind them. 
-A smartband with the most suitable profile will be provided to each visitor, so that can everyone can have a customized experience.
 
-## Authors
-[Domiziana Catalano](https://www.linkedin.com/in/domizianacatalano/)
+## The first judgement
+Our first delivery was a bit confusionary so we tried to make it more focused and streamlined. 
 
-[Edoardo Puglisi](https://www.linkedin.com/in/edoardo-puglisi-a79270143/)
+<img src="https://i.kym-cdn.com/photos/images/newsfeed/001/838/935/07d.jpg" alt="alt text" width="250px">
 
-[Gianluca Panici](https://www.linkedin.com/in/gianluca-panici-452347146)
+## Changes
+We moved our focus to the most important component of the project: the user.
+Our second survey is based on questions about visitor's attitude with wearables to define better the possible use of the smartband.
 
-## [Design](https://github.com/PanK0/TalkingChalks/blob/master/Design/README.md)
-You can check out the [video](https://youtu.be/6nb3dxTIddg) for more information.
+In addition we conducted a "research on our competitor" explained in the following table.
 
-## [Architecture](https://github.com/PanK0/TalkingChalks/blob/master/Architecture/README.md)
-Here's a [video](https://www.youtube.com/watch?v=5a8aUJ3mY7I&feature=youtu.be) description of the architecture part.
+| Service | Fast | Free | Clear | Personalized |
+|:-:|:-:|:-:|:-:|:-:|
+| `TalkingChalks` |✅|✅|✅|✅
+| `Audio Guide` |✅| |✅|
+| `Museum Guide` |✅| |✅|
+| `Internet` | |✅|
 
-## [Evaluation](https://github.com/PanK0/TalkingChalks/blob/master/Evaluation/README.md)
 
-## Presentation
-We have prepared a power point [presentation](https://github.com/PanK0/TalkingChalks/tree/master/Presentation).
+## Our work up to now
+The first prototype of the system has been built: basic connection across the edge board (iot-lab), the gateway (python script) and the cloud (Azure).
+Audio playback is simulated printing different string on device terminal.
+
+## Future-Features
+We noticed that our project lacked interactivity so we decided to make visitors part of the museum's art. Using visitor's interactions with the statues we plan to create a digital modern art paiting. Stay tuned.
+
+
+<img src="https://www.esportsmag.it/wp-content/uploads/2019/03/BobRoss_Twitch-696x454.jpg" alt="alt text" width="250px">
+
+
