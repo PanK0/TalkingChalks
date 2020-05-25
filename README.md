@@ -12,10 +12,10 @@ Our second survey is based on questions about visitor's attitude with wearables 
 
 In addition we conducted a "research on our competitor" explained in the following table.
 
-| Service | Fast | Free | Clear | Personalized |
+| Service | Fast | Free | Quality of information | Personalized |5
 |:-:|:-:|:-:|:-:|:-:|
 | `TalkingChalks` |✅|✅|✅|✅
-| `Audio Guide` |✅| |✅|
+| `Audio Guide` |✅| 
 | `Museum Guide` |✅| |✅|
 | `Internet` | |✅|
 
