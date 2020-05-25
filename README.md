@@ -15,7 +15,7 @@ In addition we conducted a "research on our competitor" explained in the followi
 | Service | Fast | Free | Quality of information | Personalized |5
 |:-:|:-:|:-:|:-:|:-:|
 | `TalkingChalks` |✅|✅|✅|✅
-| `Audio Guide` |✅| 
+| `Audio Guide` |✅| |✅|
 | `Museum Guide` |✅| |✅|
 | `Internet` | |✅|
 
