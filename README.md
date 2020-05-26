@@ -8,7 +8,7 @@ Our first delivery was a bit confusionary so we tried to make it more focused an
 
 ## Changes
 We moved our focus to the most important component of the project: the user.
-Our second survey is based on questions about visitor's attitude with wearables to define better the possible use of the smartband.
+Our second survey is based on questions about the weakenesses of the competitors and the use of different devices to define better the possible use of the smartband.
 
 In addition we conducted a "research on our competitor" explained in the following table.
 
