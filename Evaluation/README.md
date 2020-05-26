@@ -1,4 +1,14 @@
 # Evaluation
+## TalkingChalks objectives
+* Provide customized information on the tour for every typology of user
+* Info are propagated through speakers in order to not isolate people
+* Full immersion on the tour, but not too long descriptions
+* **Simplicity**: easy-to-use and ready-to-use
+* Everyone can use it, even elder people, because no smartphone and no internet connectiont are required
+* **Source reliability**: info are provided by the museum 
+* **Usability**: response with the audio is quick
+* **Scalability**
+
 ## Survey
 **First survey**
 [Italian version](https://forms.gle/jZ4fBaXa6VDhBdABA) and [English one](https://forms.gle/cDC3gm15HeV4toPn9).
@@ -66,16 +76,6 @@
   * distraction given by the smartphone
   * Main drawbacks: to download an app that will be used only once.
 
-## Objective
-* Provide customized information on the tour 
-* Info are propagated through speakers, in order to not isolate people
-* Full immersion on the tour, but not too long descriptions
-* **Simplicity** easy-to-use and ready-to-use
-* Everyone can use it, even elder people, because no smartphone and no internet connectiont are required
-* **Source reliability** because info are given by the museum 
-* **Usability** response with the audio is quick
-* **Scalability**
-
 ## Technical evaluation
 
 ### LoRaWAN STM Board
@@ -103,3 +103,20 @@
    * Always reachable
    * No sensitive data stored
    * Museum curators can use these data to find out which are the most visited artworks
+   
+## FAQ
+
+#### What is TalkingChalks?
+TalkingChalks is an IoT system that can be used in a museum. It can help visitors during the tour providing information about the museum, the statues and the story behind them.
+
+#### How does it work?
+TalkingChalks works with special smartbands. They can activate sensors placed in specific points and an audio description of the statue will be played out loud. The audio description changes according to the typology of the smartbands that is activating it. The sensors are activated by smartbands and not by people in proximity because the museum is a noisy environment full of students who study and have classes. Moreover counting how many times sensors have been activated by the smartbands, we can have an overview on the most visited statues of the collection.
+
+#### Why is TalkingChalks different?
+TalkingChalks’ innovation is that the tour is more interactive and fun, especially for children. Plus, students from classical studies and from theatre courses could contribute to our project providing the correct information in the best way.
+
+#### Does it answer the needs of the user?
+TalkingChalks uses different smartbands to meet everyone’s needs. There is a smartband for people passionate about arts so that they can have detailed descriptions, a smartband for people who are not really interested and want to know the basic information. There is also a smartband for teachers or parents who are visiting the museum with children, so that they can have information in a simplified way. 
+
+#### Why a smartband?
+TaklingChalks works with a smartband so that everyone can use it. It is mainly thought for children and elder people, which don’t usually have smartphones or an internet connection.
