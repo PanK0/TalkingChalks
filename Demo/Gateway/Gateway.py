@@ -3,7 +3,9 @@ import os
 import json
 import time
 import random
+from azure.iot.device import Message, IoTHubDeviceClient
 from datetime import datetime
+import configparser
 
 '''
 #######################################
@@ -29,13 +31,14 @@ BEGIN DEVICE CLASS
 '''
 class Device :
 
-    def __init__(self, name, device_id) :
+    def __init__(self, name, device_id, hub_client) :
         self.name = name
         self.device_id = device_id
         self.assigned_profile = 'default'
+        self.hub_client = hub_client
 
     def __str__(self) :
-        return ("Device Name : " + self.name + ", Device ID : " + self.device_id)
+        return ("Device Name : " + self.name + ", Device ID : " + self.device_id + ", Connected : " + str(self.hub_client.connected))
 
 '''
 END DEVICE CLASS
@@ -59,7 +62,9 @@ def upload_devices() :
         lines = [line.rstrip() for line in devfile]
         for element in lines :
             attributes = element.split(" ")
-            devices.append(Device(attributes[0], attributes[1]))
+            hucli = IoTHubDeviceClient.create_from_connection_string(attributes[2], websockets=True)
+            hucli.connect()
+            devices.append(Device(attributes[0], attributes[1], hucli) )
     return devices
 
 # Function for getting a device from a list of devices given the device_id
@@ -92,18 +97,9 @@ def on_message(client, userdata, message) :
     #print (message.payload)
 
     global devices
-    generic_payload = json.loads(message.payload) # dict
-
-    #print ("AAA Generic payload")
-    #print (generic_payload)
-
-    payload_dict = generic_payload['payload_fields'] #dict
-    #print("BBB payload_dict")
-    #print(payload_dict)
-
-    received_message = json.loads(payload_dict['string']) #dict
-    #print("CCC received_message ")
-    #print (received_message)
+    generic_payload = json.loads(message.payload)           # dict
+    payload_dict = generic_payload['payload_fields']        # dict
+    received_message = json.loads(payload_dict['string'])   # dict
 
     sender_device = get_device(received_message['dev_id'], devices)
     assign_profile(sender_device.device_id, received_message['profile_id'], devices)
@@ -112,6 +108,12 @@ def on_message(client, userdata, message) :
     print ("Sender Device : " + received_message['dev_id'])
     print ("Device Name : " + sender_device.name )
     print ("Profile Required : " + received_message['profile_id'] + ", assigned : " + sender_device.assigned_profile)
+
+    msg = {'profile_id':received_message['profile_id']}
+    hub_msg = json.dumps(msg)
+    print ("potato")
+    (sender_device.hub_client).send_message(hub_msg)
+    print("Profile forwarded to the hub")
 
     print("*********************************************\n")
 
@@ -133,11 +135,20 @@ END CLIENT SETTINGS
 BEGIN MAIN
 '''
 
-devices = upload_devices()
-for element in devices :
-    print (element)
+if __name__ == "__main__" :
 
-client.loop_forever()
+    devices = upload_devices()
+    for element in devices :
+        print (element)
+
+    try :
+        client.loop_forever()
+
+    except KeyboardInterrupt :
+        print('Disconnecting')
+        client.disconnect()
+        for element in devices :
+            element.hub_client.disconnect()
 
 '''
 END MAIN
