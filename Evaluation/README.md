@@ -68,9 +68,36 @@
 * Provide customized information on the tour 
 * Info are propagated through speakers, in order to not isolate people
 * Full immersion on the tour, but not too long descriptions
-* **Simplicity** easy-to-use and no need to install anything
+* **Simplicity** easy-to-use and ready-to-use
 * Everyone can use it, even elder people, because no smartphone and no internet connectiont are required
 * **Source reliability** because info are given by the museum 
 * **Usability** response with the audio is quick
+* **Scalability**
 
 ## Technical evaluation
+
+### LoRaWAN STM Board
+
+### Smartband
+* Easy-to-use and ready-to-use
+* No isolation
+* Possible issues: recharge the batteries
+* **Security**: it doesn't access to sensitive data of the users
+
+### The Things Network
+
+### Hi-Fi System
+* Wired speakers connected to the LoRaWAN board 
+* We don't need as many speakers as statues
+
+### Cloud
+* Azure by Microsoft offers many out-of-the-box services that can be easily interconnected
+* We are currently using Azure IoT Hub and Azure Database
+* If we want to extend our project, we can use other Azure services
+* **Azure IoT Hub**
+ * With our current subscription and with a standard plan, we can handle a maximum of 400000 messages per day.
+ * The subscription is not free and only the first two devices are free. You can calculate your medium cost [here](https://azure.microsoft.com/it-it/pricing/calculator/)
+ * **Database**
+  * Always reachable
+  * No sensitive data stored
+  * Museum curators can use these data to find out which are the most visited artworks
