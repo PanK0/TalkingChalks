@@ -1,12 +1,12 @@
 # Evaluation
 ## TalkingChalks objectives
 * Provide customized information on the tour for every typology of user
-* Info are propagated through speakers in order to not isolate people
-* Full immersion on the tour, but not too long descriptions
+* Not isolate people
+* Full immersion on the tour
+* Not too long descriptions
 * **Simplicity**: easy-to-use and ready-to-use
 * Everyone can use it, even elder people, because no smartphone and no internet connectiont are required
 * **Source reliability**: info are provided by the museum 
-* **Usability**: response with the audio is quick
 * **Scalability**
 
 ## Survey
