@@ -33,22 +33,11 @@
 
 ### Results
 
-**Audio guide drawbacks:**
-* You can use it only one at time / isolation
-* Cost
-* Quality of information provided
-* Too long lasting descriptions
+<img src="pics/audio.png" alt="custom" width="600"/>
 
-**Guided tours drawbacks:**
-* Cost
-* Have to conform to the timing of the whole group
-* Difficult to follow if there are too many people
+<img src="pics/guided.png" alt="custom" width="600"/>
 
-**Info taken from internet drawbacks:**
-* Repeatedly checking on the phone
-* Many researches required
-* Source reliability
-* Smartphone and internet connection required
+<img src="pics/internet.png" alt="custom" width="600"/>
 
 **Use of the smartphone during the museum tour:**
 * People use their smartphone to take pictures during the tour
@@ -56,6 +45,8 @@
 * Causes isolation
 
 **Preferred devices to activate TalkingChalks:**
+<img src="pics/dev.png" alt="custom" width="600"/>
+
 * **Smartband**
   * easy-to-use
   * smartphone not required
@@ -72,7 +63,7 @@
   * need the personal smartphone
   * more igienic to use
   * distraction given by the smartphone
-  * Main drawbacks: to download an app that will be used only once.
+  * Main drawback: to download an app that will be used only once.
 
 ## Technical evaluation
 
