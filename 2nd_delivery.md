@@ -23,7 +23,7 @@ We conducted a second survey with a precise purpose: understand if and how our i
 
 To do so we tried to find the strengths of TalkingChalks over the "competitors"and its weaknesses that need to be eliminated.
 
-| Service | Fast | Free | Quality of information | Customized info | Full immersion on the tour
+| Service | Fast | Free | High Quality of information | Customized info | Full immersion on the tour
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | `TalkingChalks` |✅|✅|✅|✅|✅|
 | `Audio Guide` |✅||✅|
