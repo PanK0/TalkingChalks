@@ -79,14 +79,14 @@
 ## Technical evaluation
 
 ### LoRaWAN STM Board
+* Low power consumption
+* Wide communication range
 
 ### Smartband
 * Easy-to-use and ready-to-use
 * No isolation
 * Possible issues: recharge the batteries
 * **Security**: it doesn't access to sensitive data of the users
-
-### The Things Network
 
 ### Hi-Fi System
 * Wired speakers connected to the LoRaWAN board 
