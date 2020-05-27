@@ -52,16 +52,16 @@
   * smartphone not required
   * no isolation 
   * no distraction given by the smartphone
-  * possible drawbacks: queues to pick it up and leave it after the tour, igienic problems due to pandemic
+  * possible drawbacks: queues to pick it up and leave it after the tour, hygienic problems due to pandemic
 
 * **QR code**
   * needs the personal smartphone
-  * more igienic to use
+  * more hygienic to use
   * distraction given by the smartphone
 
 * **App**
   * need the personal smartphone
-  * more igienic to use
+  * more hygienic to use
   * distraction given by the smartphone
   * Main drawback: to download an app that will be used only once.
 
