@@ -1,9 +1,7 @@
 # Evaluation
 ## TalkingChalks objectives
 * Provide customized information on the tour for every typology of user
-* Not to isolate people
 * Full immersion on the tour
-* Not too long descriptions
 * **Simplicity**: easy-to-use and ready-to-use
 * Everyone can use it, even elder people, because no smartphone and no internet connectiont are required
 * **Source reliability**: info are provided by the museum 
@@ -85,7 +83,6 @@
 ### Smartband
 * Easy-to-use and ready-to-use
 * No isolation
-* Possible issues: recharge the batteries
 * **Security**: it doesn't access to sensitive data of the users
 
 ### Hi-Fi System
