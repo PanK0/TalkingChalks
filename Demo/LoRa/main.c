@@ -35,6 +35,7 @@ uint8_t dev_02_appeui[LORAMAC_APPEUI_LEN];
 uint8_t dev_02_appkey[LORAMAC_APPKEY_LEN];
 
 uint8_t dr_standard = 5;
+loramac_class_t cls_standard = LORAMAC_CLASS_C;
 uint8_t join_type_standard = LORAMAC_JOIN_OTAA;
 char devid[6];
 
@@ -395,6 +396,7 @@ static int _cmd_loramac(int argc, char **argv)
             semtech_loramac_set_appeui(&loramac, dev_00_appeui);
             semtech_loramac_set_appkey(&loramac, dev_00_appkey);
             semtech_loramac_set_dr(&loramac, dr_standard);
+            semtech_loramac_set_class(&loramac, cls_standard);
             strcpy(devid, "dev_00");
         }
         else if (strcmp("dev_01", argv[2]) == 0) {
@@ -405,6 +407,7 @@ static int _cmd_loramac(int argc, char **argv)
             semtech_loramac_set_appeui(&loramac, dev_01_appeui);
             semtech_loramac_set_appkey(&loramac, dev_01_appkey);
             semtech_loramac_set_dr(&loramac, dr_standard);
+            semtech_loramac_set_class(&loramac, cls_standard);
             strcpy(devid, "dev_01");
         }
         else if (strcmp("dev_02", argv[2]) == 0) {
@@ -415,6 +418,7 @@ static int _cmd_loramac(int argc, char **argv)
             semtech_loramac_set_appeui(&loramac, dev_02_appeui);
             semtech_loramac_set_appkey(&loramac, dev_02_appkey);
             semtech_loramac_set_dr(&loramac, dr_standard);
+            semtech_loramac_set_class(&loramac, cls_standard);
             strcpy(devid, "dev_02");
         }
 
