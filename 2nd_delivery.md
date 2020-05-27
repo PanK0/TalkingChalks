@@ -26,7 +26,7 @@ To do so we tried to find the strengths of TalkingChalks over the "competitors"a
 | Service | Fast | Free | Quality of information | Customized info | Full immersion on the tour
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | `TalkingChalks` |✅|✅|✅|✅|✅|
-| `Audio Guide` |✅|    
+| `Audio Guide` |✅||✅|
 | `Museum Guide` |  |✅| ✅|✅|
 | `Internet` | |✅|
 
