@@ -52,12 +52,12 @@
 * Source reliability
 * Smartphone and internet connection required
 
-**Use of the smartphone during the museum tour**
+**Use of the smartphone during the museum tour:**
 * People use their smartphone to take pictures during the tour
 * Majority of people doesn't want to use it to look for information, etc.
 * Causes isolation
 
-**Preferred device to activate TalkingChalks**
+**Preferred devices to activate TalkingChalks:**
 * **Smartband**
   * easy-to-use
   * smartphone not required
