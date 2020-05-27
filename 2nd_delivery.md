@@ -27,7 +27,7 @@ To do so we tried to find the strengths of TalkingChalks over the "competitors"a
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | `TalkingChalks` |✅|✅|✅|✅|✅|
 | `Audio Guide` |✅||✅|
-| `Museum Guide` |  |✅| ✅|✅|
+| `Museum Guide` |  || ✅|✅|
 | `Internet` | |✅|
 
 One of the key points we retrieved from the survey is the fact that most of the users would love to have a personalized description of the museum according to differents informations level: TalkingChalks is here for this!
