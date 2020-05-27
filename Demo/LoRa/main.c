@@ -584,6 +584,28 @@ static int _cmd_loramac(int argc, char **argv)
         uint8_t cnf = LORAMAC_DEFAULT_TX_MODE;  /* Default: confirmable */
         uint8_t port = LORAMAC_DEFAULT_TX_PORT; /* Default: 2 */
 
+        /* handle optional parameters */
+      if (argc > 3) {
+          if (strcmp(argv[3], "cnf") == 0) {
+              cnf = LORAMAC_TX_CNF;
+          }
+          else if (strcmp(argv[3], "uncnf") == 0) {
+              cnf = LORAMAC_TX_UNCNF;
+          }
+          else {
+              _loramac_tx_usage();
+              return 1;
+          }
+
+          if (argc > 4) {
+              port = atoi(argv[4]);
+              if (port == 0 || port >= 224) {
+                  printf("error: invalid port given '%d', "
+                         "port can only be between 1 and 223\n", port);
+                  return 1;
+              }
+          }
+        }
         semtech_loramac_set_tx_mode(&loramac, cnf);
         semtech_loramac_set_tx_port(&loramac, port);
 
