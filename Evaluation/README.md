@@ -45,7 +45,7 @@
 * Difficult to follow if there are too many people
 
 **Info taken from internet drawbacks:**
-* Costantly checking on the phone
+* Repeatedly checking on the phone
 * Many researches required
 * Source reliability
 * Smartphone and internet connection required
@@ -83,11 +83,12 @@
 ### Smartband
 * Easy-to-use and ready-to-use
 * No isolation
-* **Security**: it doesn't access to sensitive data of the users
+* **Security**: no access to sensitive data of the users
 
 ### Hi-Fi System
 * Wired speakers connected to the LoRaWAN board 
 * We don't need as many speakers as statues
+* Volume not too loud in order to not interpose with the audio description of other statues
 
 ### Cloud
 * Azure by Microsoft offers many out-of-the-box services that can be easily interconnected
@@ -100,6 +101,13 @@
    * Always reachable
    * No sensitive data stored
    * Museum curators can use these data to find out which are the most visited artworks
+
+## Demo
+We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gateway starts and loads all the registered devices attached to statues..When Lora nodes send a JSON string like {'dev_id' : 'dev_00', 'profile_id' : 'hugo'}, the gateway receives it and looks for the device. If the device is found, then the Gateway assigns the requested profile to it and data are forwarded to the hub. During this simulation we have not used speakers: the description of the statue is just a string.
+
+## End user product
+We have also built a end user product 
+
    
 ## FAQ
 
