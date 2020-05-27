@@ -106,7 +106,9 @@
 We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gateway starts and loads all the registered devices attached to statues..When Lora nodes send a JSON string like {'dev_id' : 'dev_00', 'profile_id' : 'hugo'}, the gateway receives it and looks for the device. If the device is found, then the Gateway assigns the requested profile to it and data are forwarded to the hub. During this simulation we have not used speakers: the description of the statue is just a string. Check [this](https://github.com/PanK0/TalkingChalks/tree/master/Demo) for more info.
 
 ## End user product
-We have also built a end user product to practically see how TalkingChalks works. It uses 2 NFC tags, one for each profile that we have considered, and a smartphone that scans them and plays the audio description related to the profile. [Here](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) is the video.
+We have also built a end user product to practically see how TalkingChalks works. The LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
+
+In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it is possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
    
 ## FAQ
 
