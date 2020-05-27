@@ -649,39 +649,6 @@ static int _cmd_loramac(int argc, char **argv)
                     return 1;
             }
 
-            /* wait for receive windows */
-            switch (semtech_loramac_recv(&loramac)) {
-                case SEMTECH_LORAMAC_DATA_RECEIVED:
-                    loramac.rx_data.payload[loramac.rx_data.payload_len] = 0;
-                    printf("Data received: %s, port: %d\n",
-                        (char *)loramac.rx_data.payload, loramac.rx_data.port);
-                    break;
-
-                case SEMTECH_LORAMAC_DUTYCYCLE_RESTRICTED:
-                    puts("Cannot send: dutycycle restriction");
-                    return 1;
-
-                case SEMTECH_LORAMAC_BUSY:
-                    puts("Cannot send: MAC is busy");
-                    return 1;
-
-                case SEMTECH_LORAMAC_TX_ERROR:
-                    puts("Cannot send: error");
-                    return 1;
-
-                case SEMTECH_LORAMAC_TX_DONE:
-                    puts("TX complete, no data received");
-                    break;
-            }
-
-            if (loramac.link_chk.available) {
-                printf("Link check information:\n"
-                    "  - Demodulation margin: %d\n"
-                    "  - Number of gateways: %d\n",
-                    loramac.link_chk.demod_margin,
-                    loramac.link_chk.nb_gateways);
-            }
-
             puts("Message sent with success");
 
             // Maintain this value high in order to avoid duty cycle restrictions
