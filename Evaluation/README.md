@@ -1,7 +1,7 @@
 # Evaluation
 ## TalkingChalks objectives
 * Provide customized information on the tour for every typology of user
-* Not isolate people
+* Not to isolate people
 * Full immersion on the tour
 * Not too long descriptions
 * **Simplicity**: easy-to-use and ready-to-use
@@ -43,7 +43,7 @@
 
 **Guided tours drawbacks:**
 * Cost
-* Being bonded by the timing of the whole group
+* Have to conform to the timing of the whole group
 * Difficult to follow if there are too many people
 
 **Info taken from internet drawbacks:**
@@ -66,7 +66,7 @@
   * possible drawbacks: queues to pick it up and leave it after the tour, igienic problems due to pandemic
 
 * **QR code**
-  * need the personal smartphone
+  * needs the personal smartphone
   * more igienic to use
   * distraction given by the smartphone
 
