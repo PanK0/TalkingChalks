@@ -8,7 +8,7 @@
 * **Scalability**
 
 ## Survey
-**First survey**
+### First survey
 [Italian version](https://forms.gle/jZ4fBaXa6VDhBdABA) and [English one](https://forms.gle/cDC3gm15HeV4toPn9).
 
 **Objectives:**
@@ -103,7 +103,7 @@
    * Museum curators can use these data to find out which are the most visited artworks
 
 ## Demo
-We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gateway starts and loads all the registered devices attached to statues..When Lora nodes send a JSON string like {'dev_id' : 'dev_00', 'profile_id' : 'hugo'}, the gateway receives it and looks for the device. If the device is found, then the Gateway assigns the requested profile to it and data are forwarded to the hub. During this simulation we have not used speakers: the description of the statue is just a string.
+We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gateway starts and loads all the registered devices attached to statues..When Lora nodes send a JSON string like {'dev_id' : 'dev_00', 'profile_id' : 'hugo'}, the gateway receives it and looks for the device. If the device is found, then the Gateway assigns the requested profile to it and data are forwarded to the hub. During this simulation we have not used speakers: the description of the statue is just a string. Check [this](https://github.com/PanK0/TalkingChalks/tree/master/Demo) for more info.
 
 ## End user product
 We have also built a end user product 
