@@ -3,12 +3,13 @@
 ## The first judgement
 Our first delivery was a bit confusionary so we tried to make it more focused and streamlined. 
 
-> Smart bands motivation is ok, but should be supported by questionnaires
-
 <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/838/935/07d.jpg" alt="alt text" width="250px">
 
 ## Changes
+> Smart bands motivation is ok, but should be supported by questionnaires
+
 We moved our focus to the most important component of the project: the user.
+
 Our second survey is based on questions about the use of different devices to define better the possible use of the smartband.
 In addition we conducted a "research on our competitor" explained in the executive summary.
 
@@ -26,7 +27,7 @@ To do so we tried to find the strengths of TalkingChalks over the "competitors"a
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | `TalkingChalks` |✅|✅|✅|✅|✅|
 | `Audio Guide` |✅|    
-| `Museum Guide` |  |✅| ✅|
+| `Museum Guide` |  |✅| ✅|✅|
 | `Internet` | |✅|
 
 One of the key points we retrieved from the survey is the fact that most of the users would love to have a personalized description of the museum according to differents informations level: TalkingChalks is here for this!
