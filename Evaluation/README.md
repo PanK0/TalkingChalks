@@ -78,7 +78,7 @@ We made it, you will use it, everyone will be able to repair it.
 
 **Preferred devices to activate TalkingChalks:**
 
-Interpreting the data we can conclude that people are more confident with smartbands, but also using QR codes or dedicated apps would be a possibility. But the entire survey showed us why a smartband, and it's explained later in the document.
+Interpreting the data we can conclude that people are more confident with smartbands, but also using QR codes or dedicated apps would be a possibility.
 
 <img src="pics/dev.png" alt="custom" width="600"/>
 
@@ -136,6 +136,11 @@ We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gate
 We have also built a end user product to practically see how TalkingChalks works. The LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
 
 In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it is possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
+
+## Future works
+In this [video](https://youtu.be/-mbwY9UN9j8) you can find out what we will do for the next submission:
+* an abstract painting created by museum visitors
+* detailed cost evaluation
 
 ## FAQ
 
