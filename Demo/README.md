@@ -49,7 +49,7 @@ And this is a kind of the message arriving to the cloud:
 [![database-received-data.png](https://i.postimg.cc/nzCmWL1D/database-received-data.png)](https://postimg.cc/bDfdDpWy)
 
 ## End User product [Draft]
-[Here](https://youtu.be/VByaZjvc5Bg) you can find a short video of how an user should see the system.
+[Here](https://youtu.be/Zwez2I6sRho) you can find a short video of how an user should see the system.
 
 In the video the LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
 
