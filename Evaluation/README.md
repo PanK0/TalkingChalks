@@ -1,5 +1,5 @@
 # Evaluation
-Link to [First Version](https://github.com/PanK0/TalkingChalks/blob/master/Evaluation/version1.md)
+Link to the [First Version](https://github.com/PanK0/TalkingChalks/blob/master/Evaluation/version1.md)
 
 ## TalkingChalks objectives
 * Provide customized information on the tour for every typology of user
@@ -14,7 +14,6 @@ Link to [First Version](https://github.com/PanK0/TalkingChalks/blob/master/Evalu
 The whole application has ben designed to be scalable, both for the developers and for the users. Let's see in details. 
 
 ### Scalability for users
-
 Our choices are not made by chance: we designed an application that could work using smartbands and lora boards because we are lefting opened a possibility to change and upgrade the whole system.
 
 Using smartbands means that we can implement a lot of functionalities: with BLE we can modify our application to let people to have a greater and magic experience. This technology also permits us to set up an entire new system based on proximity with less effort and maximum result. 
@@ -25,10 +24,9 @@ With our solution we can also le statues interact with smartphone apps or other 
 
 That's why we have choosen smartbands and lora boards: what we are building now can be something totally new and fresh tomorrow.
 
-Trust us, we by your side.
+Trust us, we are by your side.
 
 ### Scalability for developers
-
 "We exist". 
 
 Not only end user parts of the application are  important, but also maintenance and code easiness: cause of our scalability purposes, the main word of our coding style is **malleability**.
