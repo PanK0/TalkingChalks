@@ -162,3 +162,6 @@ TalkingChalks uses different smartbands to meet everyone’s needs. There is a s
 
 #### Why a smartband?
 TaklingChalks works with a smartband so that everyone can use it. It is mainly thought for children and elder people, which don’t usually have smartphones or an internet connection.
+
+## Video
+Video of the evaluation [here](https://youtu.be/DM_ptuPvxho).
