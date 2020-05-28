@@ -65,10 +65,14 @@ We made it, you will use it, everyone will be able to repair it.
 
 ### Results
 
+where Timing is the timing of the audio descriptions which is too long.
 <img src="pics/audio.png" alt="custom" width="600"/>
 
+
+where Timing is the timing is being constrained to the needs of the whole group, which may require too much time.
 <img src="pics/guided.png" alt="custom" width="600"/>
 
+where Timing is the timing of the interner researches which may require too much time.
 <img src="pics/internet.png" alt="custom" width="600"/>
 
 **Use of the smartphone during the museum tour:**
