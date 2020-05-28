@@ -77,7 +77,11 @@ We made it, you will use it, everyone will be able to repair it.
 * Causes isolation
 
 **Preferred devices to activate TalkingChalks:**
+
+Interpreting the data we can conclude that people are more confident with smartbands, but also using QR codes or dedicated apps would be a possibility. But the entire survey showed us why a smartband, and it's explained later in the document.
+
 <img src="pics/dev.png" alt="custom" width="600"/>
+
 
 * **Smartband**
   * easy-to-use
