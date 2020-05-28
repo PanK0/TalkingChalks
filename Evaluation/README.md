@@ -7,7 +7,39 @@ Link to [First Version](https://github.com/PanK0/TalkingChalks/blob/master/Evalu
 * **Simplicity**: easy-to-use and ready-to-use
 * Everyone can use it, even elder people, because no smartphone and no internet connectiont are required
 * **Source reliability**: info are provided by the museum 
-* **Scalability**
+* **Scalability**: the whole application has been designed to be scalable, both for the developers and for the users.
+
+## Scalability 
+
+The whole application has ben designed to be scalable, both for the developers and for the users. Let's see in details. 
+
+### Scalability for users
+
+Our choices are not made by chance: we designed an application that could work using smartbands and lora boards because we are lefting opened a possibility to change and upgrade the whole system.
+
+Using smartbands means that we can implement a lot of functionalities: with BLE we can modify our application to let people to have a greater and magic experience. This technology also permits us to set up an entire new system based on proximity with less effort and maximum result. 
+
+We want to let us opened the possibility of integrate health-safety options: in this new era after the pandemic, it could be useful for users to have an implementation that tells them if they are too close to each other while enjoying the museum. This solution is being adopted by the majors museums of the world using something similar to our project. Well, we are thinking smart: our purposes go over and take care of your health without ruining your visit at the museum. 
+
+With our solution we can also le statues interact with smartphone apps or other facilities in the museum: smart systems of donations and founding, user tracking and data collecting are only a few things that we could implement in TalkingChalks.
+
+That's why we have choosen smartbands and lora boards: what we are building now can be something totally new and fresh tomorrow.
+
+Trust us, we by your side.
+
+### Scalability for developers
+
+"We exist". 
+
+Not only end user parts of the application are  important, but also maintenance and code easiness: cause of our scalability purposes, the main word of our coding style is **malleability**.
+
+We have designed our code ready to be upgraded: it is sectorized and divided in pieces, all automathized and scalable. With few clicks you can add new devices, with few changes you can transform the network.
+
+We have a sort of "two factors authentication", made to be able to go out TTN: for now everything is secure and safe because we are trusting TTN, but what if we want to go out in a personalized lora network? We can! And we can do it without fear, because we thought with scalability in mind.
+
+Also our boards are quick to setup to be ready to run: few commands and it's possible to test our product without problems.
+
+We made it, you will use it, everyone will be able to repair it.
 
 ## Survey
 ### First survey
@@ -102,39 +134,6 @@ We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gate
 We have also built a end user product to practically see how TalkingChalks works. The LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
 
 In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it is possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
-
-
-## Scalability 
-
-The whole application has ben designed to be scalable, both for the developers and for the users. Let's see in details. 
-
-### Scalability for users
-
-Our choices are not made by chance: we designed an application that could work using smartbands and lora boards because we are lefting opened a possibility to change and upgrade the whole system.
-
-Using smartbands means that we can implement a lot of functionalities: with BLE we can modify our application to let people to have a greater and magic experience. This technology also permits us to set up an entire new system based on proximity with less effort and maximum result. 
-
-We want to let us opened the possibility of integrate health-safety options: in this new era after the pandemic, it could be useful for users to have an implementation that tells them if they are too close to each other while enjoying the museum. This solution is being adopted by the majors museums of the world using something similar to our project. Well, we are thinking smart: our purposes go over and take care of your health without ruining your visit at the museum. 
-
-With our solution we can also le statues interact with smartphone apps or other facilities in the museum: smart systems of donations and founding, user tracking and data collecting are only a few things that we could implement in TalkingChalks.
-
-That's why we have choosen smartbands and lora boards: what we are building now can be something totally new and fresh tomorrow.
-
-Trust us, we by your side.
-
-### Scalability for developers
-
-"We exist". 
-
-Not only end user parts of the application are  important, but also maintenance and code easiness: cause of our scalability purposes, the main word of our coding style is **malleability**.
-
-We have designed our code ready to be upgraded: it is sectorized and divided in pieces, all automathized and scalable. With few clicks you can add new devices, with few changes you can transform the network.
-
-We have a sort of "two factors authentication", made to be able to go out TTN: for now everything is secure and safe because we are trusting TTN, but what if we want to go out in a personalized lora network? We can! And we can do it without fear, because we thought with scalability in mind.
-
-Also our boards are quick to setup to be ready to run: few commands and it's possible to test our product without problems.
-
-We made it, you will use it, everyone will be able to repair it.
 
 ## FAQ
 
