@@ -48,6 +48,7 @@ And this is a kind of the message arriving to the cloud:
 
 [![database-received-data.png](https://i.postimg.cc/nzCmWL1D/database-received-data.png)](https://postimg.cc/bDfdDpWy)
 
+[Here](https://youtu.be/xRKr4TnVqlI) is the tech demo.
 ## End User product [Draft]
 [Here](https://youtu.be/Zwez2I6sRho) you can find a short video of how an user should see the system.
 
