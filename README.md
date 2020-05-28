@@ -1,3 +1,5 @@
+![](Design/pics/cover.png)
+
 # TalkingChalks
 TalkingChalks is an IoT system that can be used in a museum. It can help visitors during the tour providing information about the museum, the statues and the story behind them. 
 A smartband with the most suitable profile will be provided to each visitor, so that can everyone can have a customized experience.
