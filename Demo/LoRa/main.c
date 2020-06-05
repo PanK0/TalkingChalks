@@ -578,6 +578,107 @@ static int _cmd_loramac(int argc, char **argv)
         #########################################
     */
 
+    /*
+        #########################################
+        BEGIN LORAMAC NFC
+    */
+    else if (strcmp(argv[1], "NFC") == 0) {
+        printf ("Sending message\n");
+
+        uint8_t cnf = LORAMAC_DEFAULT_TX_MODE;  /* Default: confirmable */
+        uint8_t port = LORAMAC_DEFAULT_TX_PORT; /* Default: 2 */
+
+        if (argc > 3) {
+            if (strcmp(argv[3], "cnf") == 0) {
+                cnf = LORAMAC_TX_CNF;
+            }
+            else if (strcmp(argv[3], "uncnf") == 0) {
+                cnf = LORAMAC_TX_UNCNF;
+            }
+            else {
+                _loramac_tx_usage();
+                return 1;
+            }
+
+            if (argc > 4) {
+                port = atoi(argv[4]);
+                if (port == 0 || port >= 224) {
+                    printf("error: invalid port given '%d', "
+                           "port can only be between 1 and 223\n", port);
+                    return 1;
+                }
+            }
+          }
+
+          semtech_loramac_set_tx_mode(&loramac, cnf);
+          semtech_loramac_set_tx_port(&loramac, port);
+
+          // For random value
+          srand(time(0));
+          char payload[128];
+
+          get_random_payload(payload);
+
+          switch (semtech_loramac_send(&loramac,
+                                       (uint8_t *)payload, strlen(payload))) {
+              case SEMTECH_LORAMAC_NOT_JOINED:
+                  puts("Cannot send: not joined");
+                  return 1;
+
+              case SEMTECH_LORAMAC_DUTYCYCLE_RESTRICTED:
+                  puts("Cannot send: dutycycle restriction");
+                  return 1;
+
+              case SEMTECH_LORAMAC_BUSY:
+                  puts("Cannot send: MAC is busy");
+                  return 1;
+
+              case SEMTECH_LORAMAC_TX_ERROR:
+                  puts("Cannot send: error");
+                  return 1;
+          }
+
+          /* wait for receive windows */
+          switch (semtech_loramac_recv(&loramac)) {
+              case SEMTECH_LORAMAC_DATA_RECEIVED:
+                  loramac.rx_data.payload[loramac.rx_data.payload_len] = 0;
+                  printf("Data received: %s, port: %d\n",
+                         (char *)loramac.rx_data.payload, loramac.rx_data.port);
+                  break;
+
+              case SEMTECH_LORAMAC_DUTYCYCLE_RESTRICTED:
+                  puts("Cannot send: dutycycle restriction");
+                  return 1;
+
+              case SEMTECH_LORAMAC_BUSY:
+                  puts("Cannot send: MAC is busy");
+                  return 1;
+
+              case SEMTECH_LORAMAC_TX_ERROR:
+                  puts("Cannot send: error");
+                  return 1;
+
+              case SEMTECH_LORAMAC_TX_DONE:
+                  puts("TX complete, no data received");
+                  break;
+          }
+
+          if (loramac.link_chk.available) {
+              printf("Link check information:\n"
+                  "  - Demodulation margin: %d\n"
+                  "  - Number of gateways: %d\n",
+                  loramac.link_chk.demod_margin,
+                  loramac.link_chk.nb_gateways);
+          }
+
+          puts("Message sent with success");
+
+    }
+    /*
+        END LORAMAC NFC
+        #########################################
+    */
+
     /*  #########################################
         BEGIN LORAMAC START
     */
