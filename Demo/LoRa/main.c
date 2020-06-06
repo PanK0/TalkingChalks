@@ -63,7 +63,7 @@ uint8_t get_random_payload(char *payload)
     uint8_t temp = get_random_value(36, 42);
     uint8_t hrate = get_random_value(50, 120);
 
-    sprintf(payload, "{\"dev_id\" : \"%s\", \"profile_id\": \"%s\",\"temp\": \"%d\",\"hrate\": \"%d\"}", devid, profiles[profile], temp, hrate);
+    sprintf(payload, "{\"dev_id\" : \"%s\", \"profile_id\": \"%s\", \"temp\": \"%d\", \"hrate\": \"%d\"}", devid, profiles[profile], temp, hrate);
 
     return 0;
 }
@@ -771,7 +771,7 @@ static int _cmd_loramac(int argc, char **argv)
         }
 
         puts("Info sent to the cloud...\n");
-        switch (semtech_loramac_recv(&loramac))
+        switch (profile)
         {
         case 0:
             puts("Easy description: good for young students and who is not very familiar with museum in general.");

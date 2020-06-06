@@ -115,6 +115,8 @@ def on_message(client, userdata, message) :
     (sender_device.hub_client).send_message(hub_msg)
     print("Profile forwarded to the hub")
 
+    print (received_message)
+
     print("*********************************************\n")
 
 # Setting up Data Receiver from TTN
