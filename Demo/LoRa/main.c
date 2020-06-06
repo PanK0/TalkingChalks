@@ -671,7 +671,7 @@ static int _cmd_loramac(int argc, char **argv)
         #########################################
         BEGIN LORAMAC NFC
     */
-    else if (strcmp(argv[1], "NFC") == 0)
+    else if (strcmp(argv[1], "nfc") == 0)
     {
         printf("Sending message\n");
 
