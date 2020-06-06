@@ -18,7 +18,7 @@
 ## Device
 A Device has fields `name`, `device_id`, `hub_client`, `assigned_profile`.
 All the devices are stored in a .txt file, one device per file, in the following format:
-`<name> <device_id> <hub_client string>`
+`<name> <device_id> <hub_client string> <timestamp>`
 where
 
 **name** = name of the statue where the device is attached
@@ -26,6 +26,8 @@ where
 **device_id** = device ID on TTN
 
 **hub_client** = connection string for the hub
+
+**timestamp** = last device activation
 
 When the gateway starts, all registered devices are loaded and connected to the hub by the function `upload_devices()`.
 
@@ -40,7 +42,7 @@ After some transformations we obtain `received_message`, that is a dictionnary, 
 	- `dev_id` , that is the device id. It's useful to recognise the board who sent the request for the profile identification.
 	- `profile_id` , that is the profile who requested the service.
 	- Example string:
-	`{'dev_id' : 'dev_00', 'profile_id' : 'Hugo'}`
+	`{'dev_id' : 'dev_00', 'profile_id' : 'Hugo', 'temp' : '36', 'hrate' : '72', 'timestamp' : '123'}`
 - `message.topic` contains the topic in where the message arrives.
 
 **What happens when a message arrives?** When a message arrives it is transformed into a `received_message` dictionnary.

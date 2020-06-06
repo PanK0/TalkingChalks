@@ -37,6 +37,7 @@ class Device :
         self.device_id = device_id
         self.assigned_profile = 'default'
         self.hub_client = hub_client
+        self.timestamp = 0
 
     def __str__(self) :
         return ("Device Name : " + self.name + ", Device ID : " + self.device_id + ", Connected : " + str(self.hub_client.connected))
@@ -72,15 +73,16 @@ def upload_devices() :
 def get_device(device_id, devices) :
     for element in devices :
         if (element.device_id == device_id) :
-            print ("Device found!")
+            #print ("Device found!")
             return element
     print ("No device with ID " + device_id + " found.")
 
 # Function to assign a given profile to a device given the device id and a device list
-def assign_profile(device_id, profile, devices) :
+def assign_profile(device_id, profile, timestamp, devices) :
     for element in devices :
         if (element.device_id == device_id) :
             element.assigned_profile = profile
+            element.timestamp = timestamp
             print ("Profile assigned")
 
 
@@ -94,7 +96,7 @@ def on_subscribe(client, userdata, mid, granted_qos) :
 
 # Callback for message event
 def on_message(client, userdata, message) :
-    print("\n*********************************************")
+
     #print (message.payload)
 
     global devices
@@ -103,21 +105,24 @@ def on_message(client, userdata, message) :
     received_message = json.loads(payload_dict['string'])   # dict
 
     sender_device = get_device(received_message['dev_id'], devices)
-    assign_profile(sender_device.device_id, received_message['profile_id'], devices)
+    if (received_message['timestamp'] != sender_device.timestamp) :
 
-    print ("A message has been received")
-    print ("Sender Device : " + received_message['dev_id'])
-    print ("Device Name : " + sender_device.name )
-    print ("Profile Required : " + received_message['profile_id'] + ", assigned : " + sender_device.assigned_profile)
+        print("\n*********************************************")
 
-    msg = {'profile_id':received_message['profile_id']}
-    hub_msg = json.dumps(msg)
-    (sender_device.hub_client).send_message(hub_msg)
-    print("Profile forwarded to the hub")
+        assign_profile(sender_device.device_id, received_message['profile_id'], received_message['timestamp'], devices)
 
-    print (received_message)
 
-    print("*********************************************\n")
+        print ("A message has been received")
+        print ("Sender Device : " + received_message['dev_id'])
+        print ("Device Name : " + sender_device.name )
+        print ("Profile Required : " + received_message['profile_id'] + ", assigned : " + sender_device.assigned_profile)
+
+        msg = {'profile_id':received_message['profile_id']}
+        hub_msg = json.dumps(msg)
+        (sender_device.hub_client).send_message(hub_msg)
+        print("Profile forwarded to the hub")
+        
+        print("*********************************************\n")
 
 # Setting up Data Receiver from TTN
 client = paho.Client("Gateway")                        # create client for data receiver from TTN
