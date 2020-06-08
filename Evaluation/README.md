@@ -141,8 +141,11 @@ In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it 
 ## Cost Evaluation
 We have prepared a cost evaluation for a single device, the museum curators will decide how many devices to use and where to place them. Each device can be placed near a statue so that it can talk, but it's not recommended to place the devices too close, because the speaker of a statue can interpose with the one of another statue.
 * **STM32 nucleo board**
+  * 
 * **P-NUCLEO-LRWAN1**
+  * The developer kit costs €60, but we aim to reduce this cost with mass production.
 * **Speakers**
+  * 
 * **Azure**
 
 ## FAQ
