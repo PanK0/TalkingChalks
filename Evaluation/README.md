@@ -124,7 +124,6 @@ Interpreting the data we can conclude that people are more confident with smartb
 * If we want to extend our project, we can use other Azure services
 * **Azure IoT Hub**
   * With our current subscription and with a standard plan, we can handle a maximum of 400000 messages per day.
-  * The subscription is not free and only the first two devices are free. You can calculate your medium cost [here](https://azure.microsoft.com/it-it/pricing/calculator/)
  * **Database**
    * Always reachable
    * No sensitive data stored
@@ -140,6 +139,8 @@ In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it 
 
 ## Cost Evaluation
 We have prepared a cost evaluation for a single device, the museum curators will decide how many devices to use and where to place them. Each device can be placed near a statue so that it can talk, but it's not recommended to place the devices too close, because the speaker of a statue can interpose with the one of another statue.
+* **Smartband**
+  * 
 * **STM32 nucleo board**
   * 
 * **P-NUCLEO-LRWAN1**
@@ -147,6 +148,7 @@ We have prepared a cost evaluation for a single device, the museum curators will
 * **Speakers**
   * 
 * **Azure**
+  * You can calculate your medium cost [here](https://azure.microsoft.com/it-it/pricing/calculator/)
 
 ## FAQ
 
