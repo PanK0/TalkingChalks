@@ -123,7 +123,7 @@ Interpreting the data we can conclude that people are more confident with smartb
 * We are currently using Azure IoT Hub and Azure Database
 * If we want to extend our project, we can use other Azure services
 * **Azure IoT Hub**
-  * With our current subscription and with a standard plan, we can handle a maximum of 400000 messages per day.
+  * With a free subscription and with a standard plan, we can handle a maximum of 8000 messages per day.
  * **Database**
    * Always reachable
    * No sensitive data stored
@@ -140,16 +140,17 @@ In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it 
 ## Cost Evaluation
 We have prepared a cost evaluation for a single device, the museum curators will decide how many devices to use and where to place them. Each device can be placed near a statue so that it can talk, but it's not recommended to place the devices too close, because the speaker of a statue can interpose with the one of another statue.
 * **Smartband**
-  * 
-* **STM32 nucleo board**
-  * 
-* **P-NUCLEO-LRWAN1**
-  * The developer kit costs €60, but we aim to reduce this cost with mass production.
+  * We need a configurable smartband with NFC and heart rate detection. This needs to be mass produced.
+* **Board**
+  * Nucleo L073RZ board costs €10,80 but it needs some expansions
+  * X-NUCLEO-NFC04A1 (€10,75 VAT included)for the NFC tag
+  * P-NUCLEO-LRWANN1 (€33,41 VAT included) for the LoRa module
 * **Speakers**
-  * 
+  * We don't need a specific type of speakers with high resolution or extra bass. Common wired speakers cost about €10.
 * **Azure**
-  * You can calculate your medium cost [here](https://azure.microsoft.com/it-it/pricing/calculator/)
-
+  * If the number of messages sent to the hub is less than 8000/day and the total number of devices is less than 500, you can use the free plan for the Azure IoT Hub.
+  * You can calculate the cost in details [here](https://azure.microsoft.com/it-it/pricing/calculator/)
+ 
 ## FAQ
 
 #### What is TalkingChalks?
