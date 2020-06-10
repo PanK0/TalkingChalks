@@ -142,9 +142,8 @@ We have prepared a cost evaluation for a single device, the museum curators will
 * **Smartband**
   * We need a configurable smartband with NFC and heart rate detection. This needs to be mass produced.
 * **Board**
-  * Nucleo L073RZ board costs €10,80 but it needs some expansions
+  * B-L072Z-LRWAN1 is the developing kit with LoRa module (€51,52 VAT included)
   * X-NUCLEO-NFC04A1 (€10,75 VAT included)for the NFC tag
-  * P-NUCLEO-LRWANN1 (€33,41 VAT included) for the LoRa module
 * **Speakers**
   * We don't need a specific type of speakers with high resolution or extra bass. Common wired speakers cost about €10.
 * **Azure**
