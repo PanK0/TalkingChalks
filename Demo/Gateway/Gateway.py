@@ -187,6 +187,7 @@ def add_circle(c, category, hr, w, h):
 def simulate_message(devices, categories) :
     dev = choice(devices)
     prof = choice(categories)
+    cat = prof
     hr = randint(50, 120)
     if (prof == HUGO) : prof = "Hugo"
     elif (prof == MARIA) : prof = "Maria"
@@ -200,7 +201,7 @@ def simulate_message(devices, categories) :
     print ("Heart rate : " + str(hr))
     print("*********************************************\n")
 
-    add_circle(c, choice(categories), hr, randint(0, WIDTH), randint(0, HEIGHT))
+    add_circle(c, cat, hr, randint(0, WIDTH), randint(0, HEIGHT))
 
 '''
 END PAINTING
