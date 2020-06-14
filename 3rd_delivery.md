@@ -27,6 +27,6 @@ Moreover, smartband now has the ability to read heart rate of the visitor. The h
 MINIMA SPIEGAZIONE DEL COST EVALUATION
 
 ## Possible Future Implementations
-The keypoint of our project as explained is the scalability: smartband can be used for multiple purposes thanks to its easyness of use. Thanks to this we think that a new "future-feature" could be the possibility to let the band vibrate when the visitors are too close to the statue (safety of the object) or too close to each others (safety for the person). 
+The keypoint of our project as explained multiple times is the scalability: smartband can be used for multiple purposes thanks to its easyness of use. Thanks to this we think that a new "future-feature" could be the possibility to let the band vibrate when the visitors are too close to the statue (safety of the object) or too close to each others (safety for the person). 
 
 Moreover, many others visitor's profile can be implemented to diversify more the journey into the museum.
