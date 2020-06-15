@@ -23,8 +23,7 @@ As exposed in previus delivery we noticed that our project lacked interactivity 
 
 Moreover, smartband now has the ability to read heart rate of the visitor. The heart rate pick of the last few seconds will be sent to the gateway when the NFC tag of a statue is scanned and this will help curators to understand if the statue is appreciated or not. This idea is validated thanks to [this](https://mapping-museum-experience.com/wp-content/uploads/2019/04/Physiological-Correlates.pdf) paper. In addition heart rate is also used to give different sizes to the visitor's "personal" painting circles.
 
-
-MINIMA SPIEGAZIONE DEL COST EVALUATION
+We have made a cost evaulation so that the museum curators know more about TalkingChalks and its costs. We have decided to estimate the cost per unit, so that the curators of each museum can decide where to place each unit. It's strongly recommended to not to place sensors on each statue, because the speakers of a statue can interpose with the ones of another statue.
 
 ## Possible Future Implementations
 The keypoint of our project as explained multiple times is the scalability: smartband can be used for multiple purposes thanks to its easyness of use. Thanks to this we think that a new "future-feature" could be the possibility to let the band vibrate when the visitors are too close to the statue (safety of the object) or too close to each others (safety for the person). 
