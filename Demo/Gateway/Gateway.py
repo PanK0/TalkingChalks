@@ -52,6 +52,81 @@ END DEVICE CLASS
 
 '''
 #######################################
+BEGIN PAINTING
+'''
+
+# Stuffs
+WIDTH = 900
+HEIGHT = 600
+HUGO = 'Hugo'
+MARIA = 'Maria'
+ETTORE = 'Ettore'
+categories = [HUGO, MARIA, ETTORE]
+
+yel_range = ('#ffff00', '#ffff4d', '#ffff99')
+red_range = ('#ff0000', '#ff4d4d', '#ff9999')
+blu_range = ('#0000ff', '#4d4dff', '#8080ff')
+
+
+master = Tk()
+c = Canvas(master, width=WIDTH, height=HEIGHT)
+c.pack()
+
+def random_coord(width,height):
+    seed(1)
+    w = randint(0,width)
+    h = randint(0,height)
+    return w,h
+
+# category : user profile from {HUGO, MARIA, ETTORE}
+# c : canvas in where to painting
+# hr : heartrate, used for the radius
+# width=0 : border of the geometric shape
+def add_circle(c, category, hr, w, h):
+    global yel_range, red_range, blu_range
+
+    if (category == HUGO):
+        colour = choice(yel_range)      # yellow
+    elif(category == MARIA):
+        colour = choice(red_range)      # red
+    elif (category == ETTORE):
+        colour = choice(blu_range)      # blue
+    c.create_oval(w, h, w+hr, h+hr, width=0, fill=colour)
+
+def paint_message(devices, categories) :
+    dev = choice(devices)
+    prof = choice(categories)
+    hr = randint(50, 120)
+    if (prof == HUGO) : prof = "Hugo"
+    elif (prof == MARIA) : prof = "Maria"
+    elif (prof == ETTORE) : prof = "Ettore"
+    print("\n*********************************************")
+    print ("Profile assigned")
+    print ("A message has been received")
+    print ("Sender Device : " + dev.device_id)
+    print ("Device Name : " + dev.name )
+    print ("Profile : " + prof)
+    print ("Heart rate : " + str(hr))
+    print("*********************************************\n")
+
+    add_circle(c, prof, hr, randint(0, WIDTH), randint(0, HEIGHT))
+
+
+# received_message :
+# {'dev_id' : 'dev_00', 'profile_id' : 'Hugo', 'temp' : '36', 'hrate' : '72', 'timestamp' : '123'}
+def print_circle(received_message) :
+    global c
+    cat = received_message['profile_id']
+    hr = int(received_message['hrate'])
+    add_circle(c, cat, hr, randint(0, WIDTH), randint(0, HEIGHT))
+
+'''
+END PAINTING
+#######################################
+'''
+
+'''
+#######################################
 BEGIN CLIENT SETTINGS
 Settings for the client: callbacks, functions and variables for the gateway client
 '''
@@ -153,6 +228,10 @@ if __name__ == "__main__" :
     devices = upload_devices()
     for element in devices :
         print (element)
+
+    if (input("Which mode? ") == "paint_mode") :
+        while (input() == "") :
+            paint_message(devices, categories)
 
     try :
         client.loop_forever()
