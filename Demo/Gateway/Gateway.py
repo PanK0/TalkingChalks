@@ -21,7 +21,6 @@ ttn_port = 1883                                                         # TTN se
 ttn_topic = '+/devices/+/up'                                            # TTN topic
 ttn_user = 'talkingchalks'                                              # TTN Application's name
 ttn_key = 'ttn-account-v2.irz9S0BWYo_ydlT-PddsRSza7epCz6ScAfSP--qhdMM'  # TTN Application's Access Key
-ttn_down = 'iotlab-lorawan/devices/13/down'
 
 '''
 END THE THINGS NETWORK

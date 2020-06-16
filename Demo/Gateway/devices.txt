@@ -1,3 +1,3 @@
-Penelope_statue dev_00 HostName=TalkingChalks.azure-devices.net;DeviceId=dev_00;SharedAccessKey=h4cmCkVVnMj2OLAQ88xANohtbo3SY4XdgxoSsGQUa+g=
-Odisseus_statue dev_01 HostName=TalkingChalks.azure-devices.net;DeviceId=dev_01;SharedAccessKey=YWy0CjhFOViFgTBzNcIic+a9wEJFkinqma8PE+np3fA=
-Gennaro_statue dev_02 HostName=TalkingChalks.azure-devices.net;DeviceId=dev_02;SharedAccessKey=o+NCzNbUS7WV1sikMK3Hv511aL/MCIWy3BLsFENJ8ag=
+Penelope_statue dev_00 HostName=TalkingChalkz.azure-devices.net;DeviceId=dev_00;SharedAccessKey=UJ/C3PxH8S/dx/+uY6BuBEuBzyfKoPhk/btkGgG1y2c=
+Odisseus_statue dev_01 HostName=TalkingChalkz.azure-devices.net;DeviceId=dev_01;SharedAccessKey=3lE82lIMlEoJg1zvN9J8FFUxBxEeKNi+kJ1ZUad3igQ=
+Gennaro_statue dev_02 HostName=TalkingChalkz.azure-devices.net;DeviceId=dev_02;SharedAccessKey=5mbx9W1uxKd/aK6pDEKQuHaOcMkMkKwBqPRj/Ri051w=
