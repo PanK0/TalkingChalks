@@ -142,12 +142,13 @@ We have prepared a cost evaluation for a single device, the museum curators will
 * **Smartband**
   * We need a configurable smartband with NFC and heart rate detection. This needs to be mass produced.
 * **Board**
-  * B-L072Z-LRWAN1 is the developing kit with LoRa module (€51,52 VAT included)
-  * X-NUCLEO-NFC04A1 (€10,75 VAT included)for the NFC tag
+  * B-L072Z-LRWAN1 is the discovery kit with LoRa module. Price starting from £10, more info on the kit [here](https://www.st.com/resource/en/data_brief/b-l072z-lrwan1.pdf) and for buying it [here](https://www.anglia-live.com/product/1405185001/B-L072Z-LRWAN1/STMICROELECTRONICS).
+  * X-NUCLEO-NFC04A1 (€10,75 VAT included)for the NFC tag. More info [here](https://it.farnell.com/stmicroelectronics/x-nucleo-nfc04a1/scheda-espan-tag-dynamic-nfc-rfid/dp/2774141?ost=X-NUCLEO-NFC04A1&CMP=GRHS-1000962).
 * **Speakers**
   * We don't need a specific type of speakers with high resolution or extra bass. Common wired speakers cost about €10.
 * **Azure**
   * If the number of messages sent to the hub is less than 8000/day and the total number of devices is less than 500, you can use the free plan for the Azure IoT Hub.
+  * 
   * You can calculate the cost in details [here](https://azure.microsoft.com/it-it/pricing/calculator/)
  
 ## FAQ
