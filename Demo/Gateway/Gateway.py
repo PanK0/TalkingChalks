@@ -8,6 +8,8 @@ from datetime import datetime
 import configparser
 from tkinter import *                                   # painting
 from random import seed, randint, choice
+import scriptDatabase
+
 
 '''
 #######################################
@@ -45,6 +47,84 @@ class Device :
 
 '''
 END DEVICE CLASS
+#######################################
+'''
+
+'''
+#######################################
+BEGIN PAINTING
+'''
+
+# Stuffs
+WIDTH = 900
+HEIGHT = 600
+HUGO = 'Hugo'
+MARIA = 'Maria'
+ETTORE = 'Ettore'
+categories = [HUGO, MARIA, ETTORE]
+
+yel_range = ('#ffff00', '#ffff4d', '#ffff99')
+red_range = ('#ff0000', '#ff4d4d', '#ff9999')
+blu_range = ('#0000ff', '#4d4dff', '#8080ff')
+
+
+master = Tk()
+c = Canvas(master, width=WIDTH, height=HEIGHT)
+c.pack()
+
+def random_coord(width,height):
+    seed(1)
+    w = randint(0,width)
+    h = randint(0,height)
+    return w,h
+
+# category : user profile from {HUGO, MARIA, ETTORE}
+# c : canvas in where to painting
+# hr : heartrate, used for the radius
+# width=0 : border of the geometric shape
+def add_circle(c, category, hr, w, h):
+    global yel_range, red_range, blu_range
+
+    if (category == HUGO):
+        colour = choice(yel_range)      # yellow
+    elif(category == MARIA):
+        colour = choice(red_range)      # red
+    elif (category == ETTORE):
+        colour = choice(blu_range)      # blue
+    print ("potato")
+    c.create_oval(w, h, w+hr, h+hr, width=0, fill=colour)
+'''
+# For simulation purposes
+def simulate_message(devices, categories) :
+    dev = choice(devices)
+    prof = choice(categories)
+    cat = prof
+    hr = randint(50, 120)
+    if (prof == HUGO) : prof = "Hugo"
+    elif (prof == MARIA) : prof = "Maria"
+    elif (prof == ETTORE) : prof = "Ettore"
+    print("\n*********************************************")
+    print ("Profile assigned")
+    print ("A message has been received")
+    print ("Sender Device : " + dev.device_id)
+    print ("Device Name : " + dev.name )
+    print ("Profile : " + prof)
+    print ("Heart rate : " + str(hr))
+    print("*********************************************\n")
+
+    add_circle(c, cat, hr, randint(0, WIDTH), randint(0, HEIGHT))
+'''
+
+# received_message :
+# {'dev_id' : 'dev_00', 'profile_id' : 'Hugo', 'temp' : '36', 'hrate' : '72', 'timestamp' : '123'}
+def print_circle(received_message) :
+    global c
+    cat = received_message['profile_id']
+    hr = int(received_message['hrate'])
+    add_circle(c, cat, hr, randint(0, WIDTH), randint(0, HEIGHT))
+
+'''
+END PAINTING
 #######################################
 '''
 
@@ -123,6 +203,9 @@ def on_message(client, userdata, message) :
         (sender_device.hub_client).send_message(hub_msg)
         print("Profile forwarded to the hub")
 
+        received_message['id'] = received_message['timestamp']
+        scriptDatabase.add_to_db(received_message)
+
         print("*********************************************\n")
 
 # Setting up Data Receiver from TTN
@@ -140,75 +223,6 @@ END CLIENT SETTINGS
 
 '''
 #######################################
-BEGIN PAINTING
-'''
-
-# Stuffs
-WIDTH = 900
-HEIGHT = 600
-HUGO = 0
-MARIA = 1
-ETTORE = 2
-categories = [HUGO, MARIA, ETTORE]
-
-yel_range = ('#ffff00', '#ffff4d', '#ffff99')
-red_range = ('#ff0000', '#ff4d4d', '#ff9999')
-blu_range = ('#0000ff', '#4d4dff', '#8080ff')
-
-
-master = Tk()
-c = Canvas(master, width=WIDTH, height=HEIGHT)
-c.pack()
-
-def random_coord(width,height):
-    seed(1)
-    w = randint(0,width)
-    h = randint(0,height)
-    return w,h
-
-# category : user profile from {HUGO, MARIA, ETTORE}
-# c : canvas in where to painting
-# hr : heartrate, used for the radius
-# width=0 : border of the geometric shape
-def add_circle(c, category, hr, w, h):
-
-    global yel_range, red_range, blu_range
-
-    if (category == HUGO):
-        colour = choice(yel_range)      # yellow
-    elif(category == MARIA):
-        colour = choice(red_range)      # red
-    elif (category == ETTORE):
-        colour = choice(blu_range)      # blue
-    c.create_oval(w, h, w+hr, h+hr, width=0, fill=colour)
-
-# For simulation purposes
-def simulate_message(devices, categories) :
-    dev = choice(devices)
-    prof = choice(categories)
-    cat = prof
-    hr = randint(50, 120)
-    if (prof == HUGO) : prof = "Hugo"
-    elif (prof == MARIA) : prof = "Maria"
-    elif (prof == ETTORE) : prof = "Ettore"
-    print("\n*********************************************")
-    print ("Profile assigned")
-    print ("A message has been received")
-    print ("Sender Device : " + dev.device_id)
-    print ("Device Name : " + dev.name )
-    print ("Profile : " + prof)
-    print ("Heart rate : " + str(hr))
-    print("*********************************************\n")
-
-    add_circle(c, cat, hr, randint(0, WIDTH), randint(0, HEIGHT))
-
-'''
-END PAINTING
-#######################################
-'''
-
-'''
-#######################################
 BEGIN MAIN
 '''
 
@@ -217,9 +231,6 @@ if __name__ == "__main__" :
     devices = upload_devices()
     for element in devices :
         print (element)
-
-    while (input() == '') :
-        simulate_message(devices, categories)
 
     try :
         client.loop_forever()
