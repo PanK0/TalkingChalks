@@ -229,18 +229,19 @@ if __name__ == "__main__" :
     for element in devices :
         print (element)
 
-    if (input("Which mode? ") == "paint_mode") :
+    if (input("Type <demo> to start the demo ") == "demo") :
+        #
         while (input() == "") :
             paint_message(devices, categories)
+    else :
+        try :
+            client.loop_forever()
 
-    try :
-        client.loop_forever()
-
-    except KeyboardInterrupt :
-        print('Disconnecting')
-        client.disconnect()
-        for element in devices :
-            element.hub_client.disconnect()
+        except KeyboardInterrupt :
+            print('Disconnecting')
+            client.disconnect()
+            for element in devices :
+                element.hub_client.disconnect()
 
 '''
 END MAIN
