@@ -15,11 +15,27 @@ Once a visitor with a smartband steps next to a statue, a sensor recognizes the 
 
 The gateway forwards data to the Cloud and sends the material to reproduce to an HiFi System incorporated in the statue, so the user can hear the customized description.
 
-When in the Cloud, data can be stored into a database and they will be ready to be analyzed. 
+When in the Cloud, data can be stored into a database and they will be ready to be analyzed.
 
 # LoRaWAN STM Board
 [LoRaWAN](https://lora-alliance.org/about-lorawan): Long Range Wide Area Network is a communication protocol with high efficiency peculiarities. LoRaWAN is based on low power consumption and a wide communication range belonging to a technologies category named LPWAN - Low Power Wide Area Network, useful in terms of sensors to use the least energy as possible.
 With [iot-lab.info](https://www.iot-lab.info/) in our project we are going to use [B-L072Z-LRWAN1 LoRa Kit](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html) programmable using [RIOT-OS](https://riot-os.org/).
+The B-L072Z-LRWAN1 LoRa®/SigfoxTM Discovery kit is a development tool to learn and develop solutions based
+on LoRa®, SigfoxTM, and FSK/OOK technologies. This Discovery kit features the all-in-one CMWX1ZZABZ-091
+open module by Murata. The module is powered by an STM32L072CZ microcontroller and SX1276 transceiver.
+The transceiver features the LoRa® long-range modem, providing ultra-long-range spread-spectrum
+communication and high interference immunity, minimizing current consumption. Since CMWX1ZZABZ-091 is an
+open module, the user has access to all STM32L072CZ peripherals such as ADC, 16-bit timer, LP-UART, I2C,
+SPI, and USB 2.0 FS (supporting BCD and LPM).
+The B-L072Z-LRWAN1 Discovery kit includes an ST-LINK/V2-1 embedded debug tool interface, LEDs, push-
+buttons, antenna, ArduinoTM Uno V3 connectors and USB OTG connector in Micro-B format.
+The LoRaWANTM stack supports Class A, Class B, and Class C. It is available in the I-CUBE-LRWAN firmware
+package. Several examples, including an AT-command stack, are available to help users set up a complete
+LoRaWANTM node.
+The SigfoxTM stack is RC1, RC2, RC3c, and RC4 compliant. It is available in the X-CUBE-SFOX Expansion
+Package. Several examples, including an AT-command modem, are also available to help users set up a
+complete SigfoxTM node.
+
 
 Each board based on STM Nucleo system has a beacon/nfc sensor able to identify a smartband's profile and it is also equipped with an Hi-Fi System.
 
@@ -41,10 +57,9 @@ Data are received from the boards as a json string, then the emitting board is i
 Simple speakers connected to the LoRaWAN board, the main role of these instruments is to reproduce the requested audio track that explains the statue. They can be connected to the electric system or powered by batteries.
 
 # Cloud
-Azure IoT Hub by Microsoft is a managed service hosted in the cloud that acts as a central message hub for bidirectional communication between the IoT application and the device it manages. 
+Azure IoT Hub by Microsoft is a managed service hosted in the cloud that acts as a central message hub for bidirectional communication between the IoT application and the device it manages.
 
 It has a lot of functionalities for all the types of applications, in our project we will use it as MQTT broker to receive messages sent by the devices and store the data in CosmoDB, which is an integrated service.
 
 # Database
 Azure CosmoDB is a multi-model database service for any scale. It guarantees a global distribution, high-availability and low latency.
-
