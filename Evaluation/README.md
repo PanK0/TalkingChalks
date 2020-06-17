@@ -126,7 +126,9 @@ Interpreting the data we can conclude that people are more confident with smartb
   * With a free subscription and with a standard plan, we can handle a maximum of 8000 messages per day.
  * **Database**
    * Always reachable
+   * Guaranteed speed at any scale 
    * No sensitive data stored
+   * A "Time to Live" can be specified at the container level to let Cosmos DB automatically delete items after a certain amount of time expressed in seconds.
    * Museum curators can use these data to find out which are the most visited artworks
 
 ## Demo
@@ -148,7 +150,7 @@ We have prepared a cost evaluation for a single device, the museum curators will
   * We don't need a specific type of speakers with high resolution or extra bass. Common wired speakers cost about €10.
 * **Azure**
   * If the number of messages sent to the hub is less than 8000/day and the total number of devices is less than 500, you can use the free plan for the Azure IoT Hub.
-  * 
+  * If the database is always activated, the cost is €194,30 per month. If it is on only during the opening hours (12h a day, 5 days a week), the cost is €64,77 per month.
   * You can calculate the cost in details [here](https://azure.microsoft.com/it-it/pricing/calculator/)
  
 ## FAQ
