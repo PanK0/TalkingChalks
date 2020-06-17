@@ -40,7 +40,7 @@ complete SigfoxTM node.
 Each board based on STM Nucleo system has a beacon/nfc sensor able to identify a smartband's profile and it is also equipped with an Hi-Fi System.
 
 # Smartband
-The smartband is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced.
+The smartband is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced. The main role of the smartband is to activate the sensor near the statue, but we have decided to exploit the data that all the smartbands collect and use also heart rate in our project. Heart rate is also sent to the hub and stored in the database with all the other data.
 
 # The Things Network
 [The Things Network](https://www.thethingsnetwork.org/) provides a set of open tools and a global, open network to build an IoT application at low cost.
@@ -62,4 +62,4 @@ Azure IoT Hub by Microsoft is a managed service hosted in the cloud that acts as
 It has a lot of functionalities for all the types of applications, in our project we will use it as MQTT broker to receive messages sent by the devices and store the data in CosmoDB, which is an integrated service.
 
 # Database
-Azure CosmoDB is a multi-model database service for any scale. It guarantees a global distribution, high-availability and low latency.
+Azure CosmoDB is a multi-model database service for any scale. It guarantees a global distribution, high-availability and low latency. Messages that arrive at the hub are stored here, so that museum curators can access the data and know which are the most visited statues and the typologies of users.
