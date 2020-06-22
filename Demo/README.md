@@ -6,11 +6,13 @@ Lora nodes send a JSON string like the following one
 
 The Gateway receives the message and looks for the existance of the device.
 
-If the device is found, then the Gateway assigns it the requested profile.
+If the device is found, then the Gateway assigns the requested profile to it and data are forwarded to the hub and to the database. 
 
 Data are forwarded to the cloud.
 
-TODO : the audio track title corresponding to the profile is forwarded to the device so it can play the file.
+Each message that the gateway receives contributes to create the abstract painting, generating a circle with the color of the profile and the dimension of the heart rate.
+
+![circles-1.png](https://i.postimg.cc/cJYGqSP7/circles-1.png)
 
 
 ***
@@ -49,6 +51,7 @@ And this is a kind of the message arriving to the cloud:
 [![database-received-data.png](https://i.postimg.cc/nzCmWL1D/database-received-data.png)](https://postimg.cc/bDfdDpWy)
 
 [Here](https://youtu.be/xRKr4TnVqlI) is the tech demo.
+
 ## End User product [Draft]
 [Here](https://youtu.be/Zwez2I6sRho) you can find a short video of how an user should see the system.
 
