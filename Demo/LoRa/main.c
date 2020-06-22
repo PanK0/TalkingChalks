@@ -60,11 +60,10 @@ uint8_t get_random_value(uint8_t lower, uint8_t upper)
 uint8_t get_random_payload(char *payload)
 {
     profile = get_random_value(0, 2);
-    uint8_t temp = get_random_value(36, 42);
     uint8_t hrate = get_random_value(50, 120);
     uint8_t timestamp = get_random_value(0, 254);
 
-    sprintf(payload, "{\"dev_id\" : \"%s\", \"profile_id\": \"%s\", \"temp\": \"%d\", \"hrate\": \"%d\",\"timestamp\": \"%d\"}", devid, profiles[profile], temp, hrate,timestamp);
+    sprintf(payload, "{\"dev_id\" : \"%s\", \"profile_id\": \"%s\", \"hrate\": \"%d\",\"timestamp\": \"%d\"}", devid, profiles[profile], hrate,timestamp);
 
     return 0;
 }
@@ -671,7 +670,7 @@ static int _cmd_loramac(int argc, char **argv)
         #########################################
         BEGIN LORAMAC NFC
     */
-    else if (strcmp(argv[1], "nfc") == 0)
+    else if (strcmp(argv[1], "NFC") == 0)
     {
         printf("Sending message\n");
 

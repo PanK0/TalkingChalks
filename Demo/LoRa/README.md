@@ -50,11 +50,23 @@ In this section are present the set commands to give to the board for setting th
 
 Setting commands have been added to speed up the board setting process using default TTN devices.
 
+Once launched, type `loramac set dev_**`, where in place of ** put the device number. (ex: `loramac set dev_01` to set the board as the device 01)
+
 ***
 
 ## Start
 `start` command added for starting the simulation: when the command is given, the board with `dev_id` starts sending a random generated payload from the `get_random_payload()` function.
 
-The payload has the following shape: `{'dev_id' : 'dev_00', 'profile_id' : 'Hugo'}`. This stands for "An User with profile 'Hugo' is visiting the 'Penelope Statue' that is equipped with the device 'dev_00' ".
+Type `loramac start` to start the loop for sending data.
+
 
 After sending, the board sleeps for a random number of seconds. This sleep is useful for demo purposes because simulates a track playing in the corresponding node. In a real life situation the start command is given by a device approaching to the board requesting the audio reproduction.
+
+The payload has the following shape: `{'dev_id' : 'dev_00', 'profile_id' : 'Hugo', 'hrate' : '72', 'timestamp' : '123'}`. This stands for "An User with profile 'Hugo' is visiting the 'Penelope Statue' that is equipped with the device 'dev_00' ".
+
+***
+
+## NFC Simulation
+A command to simulate the NFC contact between the board and the smart band has been added. 
+
+Type `loramac NFC` to send a message from the device. 
