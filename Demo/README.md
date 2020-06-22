@@ -58,6 +58,10 @@ It's possible to see that, when the user passes his smartband [NFC tag] next to 
 
 ***
 
+## Final Demo [Here](https://youtu.be/zbf5zkPk7X0)
+
+***
+
 ## Directory Example and specifications
 Here is an example on how the directory tree can be:
 
