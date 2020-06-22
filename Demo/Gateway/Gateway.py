@@ -229,7 +229,7 @@ if __name__ == "__main__" :
     for element in devices :
         print (element)
 
-    if (input("Type <demo> to start the demo ") == "demo") :
+    if (input("Type <demo> to start the demo or press enter ") == "demo") :
         #
         while (input() == "") :
             paint_message(devices, categories)
