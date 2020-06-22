@@ -134,10 +134,16 @@ Interpreting the data we can conclude that people are more confident with smartb
 ## Demo
 We have built a demo using IoT-Lab, TheThingsNetwork and Azure IoT Hub. The Gateway starts and loads all the registered devices attached to statues..When Lora nodes send a JSON string like _{'dev_id' : 'dev_00', 'profile_id' : 'Hugo', 'hrate' : '72', 'timestamp' : '123'}_, the gateway receives it and looks for the device. If the device is found, then the Gateway assigns the requested profile to it and data are forwarded to the hub and to the database. Each message that the gateway receives contributes to create the abstract painting, generating a circle with the color of the profile and the dimension of the heart rate. During this simulation we have not used speakers: the description of the statue is just a string. Check [this](https://github.com/PanK0/TalkingChalks/tree/master/Demo) for more info.
 
-## End user product
-We have also built a end user product to practically see how TalkingChalks works. The LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
+Here is the [VIDEO](https://youtu.be/zbf5zkPk7X0) of the final demo!
 
-In the [video](https://www.youtube.com/watch?v=Zwez2I6sRho&feature=youtu.be) it is possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
+## End user product
+We have also built a end user product to practically see how TalkingChalks works.
+
+Here the LoRa Board is graphically simulated by a smartphone and two smartbands are simulated by two distinct NFC tags.
+The statue is simulated by an action figure of the famous pokèmon Squirtle. In the [video](https://youtu.be/Zwez2I6sRho) it is possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
+
+From these two different simulations we can see that as soon as the NFC tag is passed next to the board, the system is activated without delay and all the data are immediately stored into the database.
+
 
 ## Cost Evaluation
 We have prepared a cost evaluation for a single device, the museum curators will decide how many devices to use and where to place them. Each device can be placed near a statue so that it can talk, but it's not recommended to place the devices too close, because the speaker of a statue can interpose with the one of another statue.
