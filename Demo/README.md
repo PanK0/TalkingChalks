@@ -52,13 +52,13 @@ And this is a kind of the message arriving to the cloud:
 ## End User product [Draft]
 [Here](https://youtu.be/Zwez2I6sRho) you can find a short video of how an user should see the system.
 
-In the video the LoRa Board is physically simulated by a smartphone and two smartbands are physically simulated by two distinct NFC tags. Also the statue is simulated by an action figure of the famous pokèmon Squirtle.
+Here the LoRa Board is graphically simulated by a smartphone and two smartbands are simulated by two distinct NFC tags. 
+The statue is simulated by an action figure of the famous pokèmon Squirtle. 
+In the video it is possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
 
-It's possible to see that, when the user passes his smartband [NFC tag] next to the board [Smartphone], the corresponding audio guide is activated. Audio guides are different because the two simulated users have choosen different profiles.
+From these two different simulations we can see that as soon as the NFC tag is passed next to the board, the system is activated and all the data are immediately stored into the database.
 
-***
-
-## Final Demo [Here](https://youtu.be/zbf5zkPk7X0)
+### Final Demo [Here](https://youtu.be/zbf5zkPk7X0)
 
 ***
 
