@@ -41,7 +41,9 @@ complete SigfoxTM node.
 Each board based on STM Nucleo system has a beacon/nfc sensor able to identify a smartband's profile and it is also equipped with an Hi-Fi System.
 
 # Smartband
-The smartband is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced. The main role of the smartband is to activate the sensor near the statue, but we have decided to exploit the data that all the smartbands collect and use also heart rate in our project. Heart rate is also sent to the hub and stored in the database with all the other data.
+The smartband is the key point of the entire system because it stores the premade user profiles. It also contains a beacon sensor to be identified by the board. The profile ID is sent to the LoRaWAN board and an appropirate guide track will be reproduced. The main role of the smartband is to activate the sensor near the statue, but we have decided to exploit the data that all the smartbands collect and use also heart rate in our project. Heart rate is also sent to the hub and stored in the database with all the other data in order to catch the level of appreciation of the user while looking at the statue.
+
+Smartband has been chosen to activate TalkingChalks because it is easy-to-use, ready-to-use, doesn't cause isolation and it doesn't access to sensitive data of the users.
 
 # The Things Network
 [The Things Network](https://www.thethingsnetwork.org/) provides a set of open tools and a global, open network to build an IoT application at low cost.
@@ -55,12 +57,13 @@ Once running, the Gateway launches a client that subscribes to the TTN's broker 
 Data are received from the boards as a json string, then the emitting board is identified by its ID and the payloads are so forwarded using MQTT protocol.
 
 # Hi-Fi System
-Simple speakers connected to the LoRaWAN board, the main role of these instruments is to reproduce the requested audio track that explains the statue. They can be connected to the electric system or powered by batteries.
+Simple speakers connected to the LoRaWAN board, the main role of these instruments is to reproduce the requested audio track that explains the statue. They can be connected to the electric system or powered by batteries. We don't need as many speakers as artworks in the museum and volume must be not too loud in order to not interpose with the audio description of other statues.
 
 # Cloud
 Azure IoT Hub by Microsoft is a managed service hosted in the cloud that acts as a central message hub for bidirectional communication between the IoT application and the device it manages.
 
-It has a lot of functionalities for all the types of applications, in our project we will use it as MQTT broker to receive messages sent by the devices and store the data in CosmoDB, which is an integrated service.
+It has a lot of functionalities for all the types of applications, in our project we will use it as MQTT broker to receive messages sent by the devices through the Gateway and store the data in CosmoDB, which is an integrated service.
+With a free subscription and with a standard plan, we can handle a maximum of 8000 messages per day.
 
 # Database
 Azure CosmoDB is a multi-model database service for any scale. It guarantees a global distribution, high-availability and low latency. Messages that arrive at the hub are stored here, so that museum curators can access the data and know which are the most visited statues and the typologies of users.
