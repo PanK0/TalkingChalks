@@ -7,7 +7,8 @@ In the first delivery professors had doubts about the use of smartbands for our 
 In the second delivery we presented our well done evaluation work, showing our results on user preferences and needs during a tour in a museum: smart band resulted to be a winning choice, satisfying the majority of people with the simplicity, the immediacy of use and the contained costs for enjoying the tour.
 Finally, in the second judgement, professors liked how we defended our work according to their comments. However they suggested us to add some extra features to make the project more attrative in terms of IOT.
 
-We decided to add functionalities to the smartband collecting also the heart rate of the person who wears it. It can be used as an indicator to understand if he liked the artwork or not (more below).
+For this reason we wanted to enlarge our focus on the user and so we took inspiration from [this](https://mapping-museum-experience.com/wp-content/uploads/2019/04/Physiological-Correlates.pdf) paper: laboratory research has indicated that artworks may elicit emotional and physiological responses and we tried too collect this kind of data! The dimensions “Aesthetic Quality”, “Surprise/Humor”, “Dominance”  and “Curatorial Quality” were associated with cardiac measures (heart rate variability,heart rate level).
+We decided to add this functionality to the smartband to let it collect also the heart rate of the person who wears it. It can be used as an indicator to understand if he liked the artwork or not and later by the curators to build more specific tours.
 
 Moreover the scalability we have planned will let to implement more smart features as you can see in the specific section.
 
@@ -17,7 +18,7 @@ Moreover the scalability we have planned will let to implement more smart featur
 * New functionality! Heart reate sensing.
 
 ## Our work up to now
-We finally built a working prototype of the whole system that you can see [here](https://google.it): again audio playback is simulated with "on-screen"text, but now we managed to push visitor's data to the database and figured out how to really do crowdsensing with them.
+We finally built a working prototype of the whole system that you can see [here](https://youtu.be/zbf5zkPk7X0): again audio playback is simulated with "on-screen"text, but now we managed to push visitor's data to the database and figured out how to really do crowdsensing with them.
 
 As exposed in previus delivery we noticed that our project lacked interactivity so we decided to make visitors part of the museum's art. A new abstract painting is generated everyday by the users while activating the sensors with the smartbands.
 
