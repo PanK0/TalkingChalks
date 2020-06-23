@@ -3,7 +3,9 @@
 ## The second judgement
 <img src="pics/more_iot.jpg" width="250px">
 
-Professors liked the fact that we defended our work, but they think we didn't exploit much about iot.
+In the first delivery professors had doubts about the use of smartbands for our application, because the choice seemed not well motivated and evaluated.
+In the second delivery we presented our well done evaluation work, showing our results on user preferences and needs during a tour in a museum: smart band resulted to be a winning choice, satisfying the majority of people with the simplicity, the immediacy of use and the contained costs for enjoying the tour.
+Finally, in the second judgement, professors liked how we defended our work according to their comments. However they suggested us to add some extra features to make the project more attrative in terms of IOT.
 
 We decided to add functionalities to the smartband collecting also the heart rate of the person who wears it. It can be used as an indicator to understand if he liked the artwork or not (more below).
 
