@@ -36,7 +36,9 @@ Here is provided the Demo folder containing the essential code and instructions 
 
 The Demo shows the behaviour of the gateway receiving data from the lora boards and forwarding the data to the cloud: this is the skeleton of our main product.
 
-How will the final product appear? Take a funny look at our [concept](https://youtu.be/Zwez2I6sRho) clip!
+How will the final product appear to the user? Take a funny look at our [concept](https://youtu.be/Zwez2I6sRho) clip!
+
+And if you want to give a look to a **more complete product** both from the point of view of the authors and the users, in this [video](https://youtu.be/zbf5zkPk7X0) you can have a more clear idea of what we are *talking* about.
 
 The immature side of the Demo is the [Preliminary Test](https://github.com/PanK0/TalkingChalks/tree/master/Preliminary_Test) section, where we gave a proof of concept of our technical work.
 
