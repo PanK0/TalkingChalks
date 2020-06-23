@@ -86,6 +86,17 @@ Interpreting the data we can conclude that people are more confident with smartb
 
 <img src="pics/dev.png" alt="custom" width="600"/>
 
+We conducted a second survey with a precise purpose: understand if and how our idea could be helpful for the visitors of the museum.
+
+What we can deduce from the survey is the fact that TalkingChalks can offer a much more complete and satisfying experience for the user in comparison to other TC competitors. 
+
+| Service | Fast | Free | High Quality of information | Customized info | Full immersion on the tour
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| `TalkingChalks` |✅|✅|✅|✅|✅|
+| `Audio Guide` |✅||✅|
+| `Museum Guide` |  || ✅|✅|
+| `Internet` | |✅|
+
 
 * **Smartband**
   * easy-to-use
