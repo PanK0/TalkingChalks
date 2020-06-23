@@ -14,17 +14,20 @@ Moreover the scalability we have planned will let to implement more smart featur
 
 ## Changes
 * Visitor's painting completed.
+* System full functionalities developed. 
 * Detailed cost evaluation of the prototype. 
 * New functionality! Heart reate sensing.
 
 ## Our work up to now
-We finally built a working prototype of the whole system that you can see [here](https://youtu.be/zbf5zkPk7X0): again audio playback is simulated with "on-screen"text, but now we managed to push visitor's data to the database and figured out how to really do crowdsensing with them.
+We finally built a working prototype of the whole system that you can see [here](https://youtu.be/zbf5zkPk7X0): again audio playback is simulated with "on-screen" text, but now we managed to push visitor's data to the database and figured out how to really do crowdsensing with them.
 
 As exposed in previus delivery we noticed that our project lacked interactivity so we decided to make visitors part of the museum's art. A new abstract painting is generated everyday by the users while activating the sensors with the smartbands.
 
 <img src="pics/circle.gif">
 
 Moreover, smartband now has the ability to read heart rate of the visitor. The heart rate pick of the last few seconds will be sent to the gateway when the NFC tag of a statue is scanned and this will help curators to understand if the statue is appreciated or not. This idea is validated thanks to [this](https://mapping-museum-experience.com/wp-content/uploads/2019/04/Physiological-Correlates.pdf) paper. In addition heart rate is also used to give different sizes to the visitor's "personal" painting circles.
+
+The complete code to make TalkingChalks alive is available in the [/Demo](https://github.com/PanK0/TalkingChalks/tree/master/Demo) section, and also a simple tutorial and the description of the software are provided.
 
 We have made a cost evaulation so that the museum curators know more about TalkingChalks and its costs. We have decided to estimate the cost per unit, so that the curators of each museum can decide where to place each unit. It's strongly recommended to not to place sensors on each statue, because the speakers of a statue can interpose with the ones of another statue.
 
