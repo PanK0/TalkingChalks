@@ -36,7 +36,7 @@ The SigfoxTM stack is RC1, RC2, RC3c, and RC4 compliant. It is available in the 
 Package. Several examples, including an AT-command modem, are also available to help users set up a
 complete SigfoxTM node.
 
-![LoRa](https://hackster.imgix.net/uploads/attachments/1145080/lota_wpZhSCHZun.jpg?auto=compress%2Cformat&w=1280&h=960&fit=max)
+![](pics/board.png)
 
 Each board based on STM Nucleo system has a beacon/nfc sensor able to identify a smartband's profile and it is also equipped with an Hi-Fi System.
 
