@@ -37,4 +37,4 @@ The keypoint of our project as explained multiple times is the scalability: smar
 Moreover, many others visitor's profile can be implemented to diversify more the journey into the museum.
 
 ## What we have not evaluated
-An important part of the project that could not evaluate is product evaluation both by us and by the users. Unfortunately we have don't own a programmable smartband and we have no access to the Sapienza museum right now, so we could not test our product and we could not collect users feedbacks on it. 
+An important part of the project that could not evaluate is product evaluation both by us and by the users. Unfortunately we don't own a programmable smartband and we have no access to the Sapienza museum right now, so we could not test our product and we could not collect users feedbacks on it. 
