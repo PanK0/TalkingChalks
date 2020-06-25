@@ -44,3 +44,4 @@ The immature side of the Demo is the [Preliminary Test](https://github.com/PanK0
 
 ## Presentation
 We have prepared a power point [presentation](https://github.com/PanK0/TalkingChalks/tree/master/Presentation).
+[Here](https://www.hackster.io/348161/talking-chalks-d497bc) is a blog post that presents our work 
