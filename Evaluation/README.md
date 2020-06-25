@@ -4,7 +4,7 @@ Link to the [First Version](https://github.com/PanK0/TalkingChalks/blob/master/E
 ## Why TalkingChalks
 TalkingChalks is born for the course of [IoT](http://ichatz.me/Site/InternetOfThings2020) @ Sapienza University of Rome.
 
-During a conference with the curators of the Sapienza Museum of Classical Art we found out that they needed di some systems to give some freshness to the Museum. Among the requestes and the ideas, we came out with TalkingChalks to help the Museum giving some attractiveness for users by letting the statues - literally - talk.
+During a conference with the curators of the Sapienza Museum of Classical Art we found out that they needed di some systems to give some freshness to the Museum. Among the requestes and the ideas it came out that they do not have audio guides, and so we invented TalkingChalks to help the Museum giving some attractiveness for users by letting the statues - literally - talk.
 
 Here is TalkingChalks.
 
