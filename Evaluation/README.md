@@ -6,6 +6,8 @@ TalkingChalks is born for the course of [IoT](http://ichatz.me/Site/InternetOfTh
 
 During a conference with the curators of the Sapienza Museum of Classical Art we found out that they needed di some systems to give some freshness to the Museum. Among the requestes and the ideas it came out that they do not have audio guides, and so we invented TalkingChalks to help the Museum giving some attractiveness for users by letting the statues - literally - talk.
 
+TalkingChalks is the effective rensponse to what they need, and we made it real by investigating among the users on what would be the best way to make TalkingChalks real: we made surveys, tests, we added personalized profiles and appreciation recognition. Then we merged our knowledge to develop a simple and solid system to give statues a voice.
+
 Here is TalkingChalks.
 
 ## TalkingChalks objectives
