@@ -11,8 +11,9 @@ Once finished give `npm start` and connect to localhost:3000.
 After that you will be able to visualize data coming from the system.
 
 Here is an example on what your view will be:
-
-![app-penelope.png](https://i.postimg.cc/L8rzNW3n/app-penelope.png)
+|  Penelope Statue informations |
+|---|
+|![app-penelope.png](https://i.postimg.cc/L8rzNW3n/app-penelope.png)|
 
 The picture is clear: TalkingChalks has registered two people with profile Hugo approaching the statue, one with profile Maria and four with profile Ettore (hey, better don't make Odisseus gelous, don't you think so?!?)
 
