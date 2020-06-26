@@ -12,6 +12,8 @@ We decided to add this functionality to the smartband to let it collect also the
 
 Moreover the scalability we have planned will let to implement more smart features as you can see in the specific section.
 
+Finally, we also we paid attention to the comments the professors gave to other teams and even if they said nothing to us, we evaluated to create a simple web interface to let the curators visualize the dedicated data of devices and statues: it is just a simple and unpretentious web view, but this is the curse of IOT and not the one of Web Application Development, so we decided to focus more on the IOT aspect.
+
 ## Changes
 * Visitor's painting completed.
 * System full functionalities developed. 
