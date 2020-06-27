@@ -15,10 +15,11 @@ Moreover the scalability we have planned will let to implement more smart featur
 Finally, we also we paid attention to the comments the professors gave to other teams and even if they said nothing to us, we evaluated to create a simple web interface to let the curators visualize the dedicated data of devices and statues: it is just a simple and unpretentious web view, but this is the curse of IOT and not the one of Web Application Development, so we decided to focus more on the IOT aspect.
 
 ## Changes
+* New functionality! Heart reate sensing.
 * Visitor's painting completed.
 * System full functionalities developed. 
 * Detailed cost evaluation of the prototype. 
-* New functionality! Heart reate sensing.
+* Web interface for curators.
 
 ## Our work up to now
 We finally built a working prototype of the whole system that you can see [here](https://youtu.be/zbf5zkPk7X0): again audio playback is simulated with "on-screen" text, but now we managed to push visitor's data to the database and figured out how to really do crowdsensing with them.
