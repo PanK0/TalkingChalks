@@ -1,0 +1,36 @@
+{
+  "name": "webapp",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=10.6",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@azure/event-hubs": "^2.1.4",
+    "@azure/event-processor-host": "^2.1.1",
+    "@types/node": "^13.9.3",
+    "axios": ">=0.19.0",
+    "eslint-config-standard": ">=14.1.0",
+    "eslint-plugin-node": ">=9.2.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-standard": ">=4.0.1",
+    "express": ">=4.17.1",
+    "ws": ">=7.1.2"
+  },
+  "description": "---\r page_type: sample\r languages:\r - javascript\r - html\r products:\r - azure-iot-hub\r name: IoTHub data visualization in web application\r urlFragment: web-app-visualization\r description: \"This repo contains code for a web application, which can read temperature and humidity data from IoT Hub and show the real-time data on a web page.\"\r ---",
+  "main": "server.js",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

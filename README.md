@@ -51,6 +51,9 @@ And if you want to give a look to a **more complete product** both from the poin
 
 The immature side of the Demo is the [Preliminary Test](https://github.com/PanK0/TalkingChalks/tree/master/Preliminary_Test) section, where we gave a proof of concept of our technical work.
 
+## [Web App](https://github.com/PanK0/TalkingChalks/blob/master/TCWebApp/README.md) - For the Curators
+The curators of the Museum can access an user friendly interface to have the informations about statues and profiles displayed in a single look: by selecting the device, they will know the statue it is equipped on an the profiles that visited the statue.
+
 ## Presentation
 We have prepared a power point [presentation](https://github.com/PanK0/TalkingChalks/tree/master/Presentation).
 
