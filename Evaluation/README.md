@@ -182,13 +182,13 @@ We have prepared a cost evaluation for a single device, the museum curators will
 ## FAQ
 
 #### What is TalkingChalks?
-TalkingChalks is an IoT system that can be used in a museum. It can help visitors during the tour providing information about the museum, the statues and the story behind them.
+TalkingChalks is an IoT system that can be used in a museum. It can help visitors during the tour providing information about the museum and the artworks. When using the system, the visitors can contribute to create an abstract painting.
 
 #### How does it work?
 TalkingChalks works with special smartbands. They can activate sensors placed in specific points and an audio description of the statue will be played out loud. The audio description changes according to the typology of the smartbands that is activating it. The sensors are activated by smartbands and not by people in proximity because the museum is a noisy environment full of students who study and have classes. Moreover counting how many times sensors have been activated by the smartbands, we can have an overview on the most visited statues of the collection.
 
 #### Why is TalkingChalks different?
-TalkingChalks’ innovation is that the tour is more interactive and fun, especially for children. Plus, students from classical studies and from theatre courses could contribute to our project providing the correct information in the best way.
+TalkingChalks’ innovation is that the tour is more interactive and fun. Plus, students from classical studies and from theatre courses could contribute to our project providing the correct information in the best way.
 
 #### Does it answer the needs of the user?
 TalkingChalks uses different smartbands to meet everyone’s needs. There is a smartband for people passionate about arts so that they can have detailed descriptions, a smartband for people who are not really interested and want to know the basic information. There is also a smartband for teachers or parents who are visiting the museum with children, so that they can have information in a simplified way. 
